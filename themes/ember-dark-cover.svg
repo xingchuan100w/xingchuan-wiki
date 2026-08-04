@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="末日荒原地平线剪影封面：暗夜暖橙微光下的建筑与信号塔剪影">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1512"/>
+      <stop offset=".55" stop-color="#231b14"/>
+      <stop offset=".8" stop-color="#281d15"/>
+      <stop offset="1" stop-color="#2b1f16"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".62" cy=".78" r=".5">
+      <stop offset="0" stop-color="#c9662e" stop-opacity=".9"/>
+      <stop offset=".18" stop-color="#c9662e" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#c9662e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#c9662e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0807"/>
+      <stop offset="1" stop-color="#060504"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.50 0 0 0 0 0.42 0 0 0 0 0.34 0 0 0 0.9 0"/>
+    </filter>
+  </defs>
+
+  <!-- 暗夜暖橙天空 -->
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <!-- 地平线附近砖红/烧橙落日微光 -->
+  <rect width="1200" height="420" fill="url(#sun)"/>
+  <!-- 落日圆盘 -->
+  <circle cx="744" cy="318" r="34" fill="#c9662e" opacity=".85"/>
+
+  <!-- 远景：低矮废墟轮廓（暮霭浅棕） -->
+  <path fill="#453a2d" opacity=".65" d="M0 318 L60 318 L60 300 L96 300 L96 312 L150 312 L150 296 L176 296 L176 310 L250 310 L250 318 L330 318 L330 304 L372 304 L372 314 L470 314 L470 318 L600 318 L600 306 L648 306 L648 318 L760 318 L760 310 L830 310 L830 318 L950 318 L950 304 L1000 304 L1000 318 L1200 318 L1200 420 L0 420 Z"/>
+
+  <!-- 中景：破败建筑群剪影（深棕） -->
+  <g fill="#0a0807">
+    <!-- 左：残破楼体 -->
+    <path d="M70 320 L70 216 L118 216 L118 232 L142 232 L142 320 Z"/>
+    <path d="M86 216 L86 196 L104 196 L104 216 Z"/>
+    <!-- 中左：坍塌半楼 -->
+    <path d="M210 320 L210 250 L262 236 L292 258 L292 320 Z"/>
+    <!-- 中：信号塔 -->
+    <path d="M478 320 L494 320 L489 152 L483 152 Z"/>
+    <path d="M462 200 L510 200 L510 206 L462 206 Z"/>
+    <path d="M468 244 L504 244 L504 250 L468 250 Z"/>
+    <path d="M486 152 L486 128 L488 128 L488 152 Z"/>
+    <!-- 中右：工厂与烟囱 -->
+    <path d="M640 320 L640 262 L726 262 L726 320 Z"/>
+    <path d="M752 320 L752 210 L772 210 L772 320 Z"/>
+    <path d="M752 210 L762 196 L772 210 Z"/>
+    <!-- 右：断裂高架/电塔 -->
+    <path d="M880 320 L896 320 L902 176 L906 176 L912 320 L928 320 L916 168 L892 168 Z"/>
+    <path d="M868 208 L940 208 L940 214 L868 214 Z"/>
+    <path d="M1010 320 L1010 246 L1066 246 L1066 262 L1108 262 L1108 320 Z"/>
+  </g>
+
+  <!-- 烟囱顶端微光/塔灯（砖红） -->
+  <circle cx="487" cy="126" r="2.4" fill="#c9662e"/>
+  <circle cx="762" cy="194" r="2" fill="#c9662e" opacity=".8"/>
+  <circle cx="904" cy="166" r="2" fill="#c9662e" opacity=".7"/>
+
+  <!-- 归鸟剪影 -->
+  <g stroke="#0a0807" stroke-width="2" fill="none" opacity=".7">
+    <path d="M300 96 q6 -6 12 0 q6 -6 12 0"/>
+    <path d="M348 118 q5 -5 10 0 q5 -5 10 0"/>
+    <path d="M980 84 q6 -6 12 0 q6 -6 12 0"/>
+  </g>
+
+  <!-- 近景地面 -->
+  <rect y="318" width="1200" height="102" fill="url(#ground)"/>
+  <!-- 地面残迹线 -->
+  <g stroke="#1e1813" stroke-width="2">
+    <path d="M0 336 L240 332 L420 338"/>
+    <path d="M520 344 L760 340 L980 346 L1200 342"/>
+    <path d="M120 362 L380 358 L640 364"/>
+  </g>
+  <g fill="#040302">
+    <path d="M318 340 L336 322 L352 340 Z"/>
+    <path d="M996 352 L1024 330 L1046 352 Z"/>
+    <path d="M560 352 L574 338 L588 352 Z"/>
+  </g>
+
+  <!-- 纸纹棕斑颗粒 -->
+  <rect width="1200" height="420" filter="url(#grain)" opacity=".08"/>
+</svg>

@@ -1,0 +1,162 @@
+{
+    "section":  "周本/机制攻略",
+    "slug":  "mechanics",
+    "description":  "周本通用规则：巨楔进入次数不限，各难度每周首通有额外奖励（账号绑定每周 1 次）；根源之战剧本阶段 2 解锁、150 星团开启全服共战，BOSS 银疫护盾需生物质/赤化电浆弹破盾，末日难度每周首通额外高品质模组；控制器道具已于 2025-03-27 取消。",
+    "seoTitle":  "七日世界周本机制攻略 - xingchuan",
+    "seoDescription":  "七日世界周本机制攻略：忘却之主、腐影猎手、诡秘侍者三大巨楔BOSS机制拆解与逃课打法，赛季继承、模因摇篮、收容物系统详解。",
+    "items":  [
+                  {
+                      "name":  "周本：忘却之主（遗忘巨楔 · 大师 LV60）",
+                      "slug":  "boss-oblivion",
+                      "title":  "忘却之主打法攻略：大师难度机制详解",
+                      "seoTitle":  "七日世界忘却之主打法攻略：大师难度机制详解 - xingchuan",
+                      "seoDescription":  "七日世界忘却之主打法攻略：遗忘巨楔大师LV60三阶段机制拆解、花苞打断、平台坍塌应对、愿望先生火箭筒逃课打法与奖励掉落。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "difficulty":  "大师 LV60",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "name":  "周本：腐影猎手（贪欲巨楔）",
+                      "slug":  "boss-shadow-hunter",
+                      "title":  "腐影猎手打法攻略：贪欲巨楔机制详解",
+                      "seoTitle":  "七日世界腐影猎手打法攻略：贪欲巨楔机制详解 - xingchuan",
+                      "seoDescription":  "七日世界腐影猎手打法攻略：贪欲巨楔三阶段机制、加特林破无敌、巢体精英处理顺序、分身火箭灭点应对与金色武器蓝图掉落。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "difficulty":  "新手第一只巨楔",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "name":  "周本：诡秘侍者（冻原巨楔 · 雪国）",
+                      "slug":  "boss-frozen-servant",
+                      "title":  "诡秘侍者打法攻略：冻原巨楔机制详解",
+                      "seoTitle":  "七日世界诡秘侍者打法攻略：冻原巨楔机制详解 - xingchuan",
+                      "seoDescription":  "七日世界诡秘侍者打法攻略：雪国冻原巨楔影质侵蚀机制、光球点柱、永久龙卷风灭点应对、脉冲动力装置与空之子收容物推荐。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "difficulty":  "雪国人生剧本周本",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "name":  "机制：赛季继承规则",
+                      "slug":  "season-inheritance",
+                      "title":  "赛季继承规则详解：永恒岛与中转仓怎么带",
+                      "seoTitle":  "七日世界赛季继承规则详解：永恒岛中转仓带什么 - xingchuan",
+                      "seoDescription":  "七日世界赛季继承规则详解：不清档，永恒岛+中转仓继承机制，永久保留与重置清单，新赛季约20000物资点数带入推荐。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "name":  "机制：模因/摇篮系统",
+                      "slug":  "memetic-cradle",
+                      "title":  "模因与摇篮系统详解：天赋树加点与专精重置",
+                      "seoTitle":  "七日世界模因摇篮系统详解：天赋树加点与专精重置 - xingchuan",
+                      "seoDescription":  "七日世界模因系统详解：采集/工艺/经营/建造四类天赋树，密钥+转能电池解锁，专精4选1与记忆清洗液重置，摇篮栏位说明。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "name":  "机制：收容物/异常物系统",
+                      "slug":  "containment-system",
+                      "title":  "收容物系统详解：捕获、养成与出战",
+                      "seoTitle":  "七日世界收容物系统详解：捕获养成与出战 - xingchuan",
+                      "seoDescription":  "七日世界收容物系统详解：战斗型/造物型/领地型三类，按F捕获技巧、捕获之汤+50%成功率、收容环境加速回能与跨赛季继承。",
+                      "summary":  "详细攻略内容待系统补充，当前为框架占位。",
+                      "updatedAt":  "2026-08-04",
+                      "status":  "整理中",
+                      "info":  {
+                                   "season":  "异象轮盘 S4 · 引力之渊",
+                                   "updated":  "2026-08-04"
+                               },
+                      "sections":  [
+                                       {
+                                           "heading":  "基本介绍",
+                                           "blocks":  [
+                                                          {
+                                                              "text":  "详细攻略内容待系统补充，当前版本为框架占位。",
+                                                              "type":  "paragraph"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
+                  }
+              ]
+}
