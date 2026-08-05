@@ -1,4 +1,4 @@
-﻿/* xingchuan 全站样式 —— Editorial Game Index（暗夜暖橙版）
+/* xingchuan 全站样式 —— Editorial Game Index（暗夜暖橙版）
    移动端优先，暗夜暖橙配色（排版结构与纸张版一致），高密度索引 + 超大展示排印，无第三方资源 */
 
 :root {
@@ -786,5 +786,64 @@ tbody tr:last-child td { border-bottom: none; }
   .back-to-top {
     bottom: 32px;
     right: 32px;
+  }
+}
+/* ---------- 快捷入口 ---------- */
+.quick-links {
+  margin-top: 42px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.quick-links__title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 900;
+  margin: 8px 0 16px;
+}
+
+.quick-links__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.quick-links__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.quick-links__item:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.quick-links__icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.quick-links__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quick-links__desc {
+  font-size: 13px;
+  color: var(--dim);
+}
+
+@media (min-width: 768px) {
+  .quick-links__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

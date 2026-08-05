@@ -1,4 +1,4 @@
-﻿// pages.js — 各页面渲染函数（字符串插值，无模板引擎）
+// pages.js — 各页面渲染函数（字符串插值，无模板引擎）
 // 所有攻略内容均来自 data/ 下 JSON，由 build.mjs 注入，本文件只负责结构。
 
 import { renderBase, escapeHtml } from './base.js';
@@ -110,6 +110,27 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
 <ol class="sec-index">
 ${blocks}
 </ol>
+<section class="quick-links">
+  ${microLabel('QUICK LINKS')}
+  <h2 class="quick-links__title">快捷入口</h2>
+  <div class="quick-links__grid">
+    <a class="quick-links__item" href="https://qrsj-map.lzhailalu.com/" target="_blank" rel="noopener">
+      <span class="quick-links__icon">🗺️</span>
+      <span class="quick-links__name">交互地图</span>
+      <span class="quick-links__desc">资源点位、据点标记</span>
+    </a>
+    <a class="quick-links__item" href="https://lzhailalu.com/" target="_blank" rel="noopener">
+      <span class="quick-links__icon">⚔️</span>
+      <span class="quick-links__name">配装器</span>
+      <span class="quick-links__desc">装备搭配、模组模拟</span>
+    </a>
+    <a class="quick-links__item" href="https://market.lzhailalu.com/" target="_blank" rel="noopener">
+      <span class="quick-links__icon">🤖</span>
+      <span class="quick-links__name">星川助手</span>
+      <span class="quick-links__desc">市场行情、数据查询</span>
+    </a>
+  </div>
+</section>
 <p class="hub-cta">
   <a class="hub-cta__link" href="/${escapeHtml(game.slug)}/guide/">
     <span class="hub-cta__text">攻略大全 · 全部内容一页速查</span>
