@@ -1,8 +1,8 @@
 {
-    "slug":  "collection",
-    "seoDescription":  "七日世界收集图鉴：皮毛获取与效果、材料收集点位、异常物图鉴等收集类内容速查。",
-    "section":  "收集图鉴",
-    "description":  "七日世界收集图鉴：皮毛、材料、异常物等收集类内容速查",
+    "slug":  "codex",
+    "seoDescription":  "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查。",
+    "section":  "万物图鉴",
+    "description":  "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查",
     "items":  [
                   {
                       "seoDescription":  "七日世界皮毛系统详解：荒原狼皮、月兆狼皮、月兆兔皮、金羊毛、星临牛皮等各类皮毛的获取方式与制作武器效果。",
@@ -176,5 +176,5 @@
                                }
                   }
               ],
-    "seoTitle":  "七日世界收集图鉴 - xingchuan"
+    "seoTitle":  "七日世界万物图鉴 - xingchuan"
 }

@@ -107,8 +107,6 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
   </figcaption>
 </figure>
 <p class="lede">${escapeHtml(game.fullName)} · ${escapeHtml(game.description)}</p>
-<ol class="sec-index">
-${blocks}
 <section class="quick-links">
   ${microLabel('QUICK LINKS')}
   <h2 class="quick-links__title">快捷入口</h2>
@@ -130,6 +128,8 @@ ${blocks}
     </a>
   </div>
 </section>
+<ol class="sec-index">
+${blocks}
 </ol>
 <p class="hub-cta">
   <a class="hub-cta__link" href="/${escapeHtml(game.slug)}/guide/">
@@ -189,7 +189,7 @@ ${blocks}`;
 
   return renderBase({
     title: `${game.name}攻略大全：配装/材料/周本/版本更新一站式目录 - xingchuan`,
-    description: `${game.name}攻略大全：配装推荐、生产与制作相关、周本机制攻略与版本更新日志全部条目汇总目录，一站式速查，持续更新，建议收藏。`,
+    description: `${game.name}攻略大全：流派配装、采集与生产、周本与机制、版本情报全部条目汇总目录，一站式速查，持续更新，建议收藏。`,
     canonical,
     content: shell(site, games, game.slug, inner, game.slug),
   });
@@ -400,9 +400,15 @@ ${secs}`;
 export function renderMaterialsList({ site, games, game, data, canonical }) {
   const blocks = data.items
     .map((m) => {
-      const body = `<span class="item-title">${escapeHtml(m.name)}</span>
-      <span class="item-meta-row">${metaTag(m.location)}${metaTag(m.respawn)}</span>
-      <span class="item-summary">${escapeHtml(m.summary || m.route)}</span>`;
+      // 支持两种数据结构：materials 和 collection
+      const title = m.name || m.title;
+      const location = m.location || '';
+      const respawn = m.respawn || '';
+      const summary = m.summary || m.route || '';
+      const meta = location || respawn ? `${metaTag(location)}${metaTag(respawn)}` : '';
+      const body = `<span class="item-title">${escapeHtml(title)}</span>
+      ${meta ? `<span class="item-meta-row">${meta}</span>` : ''}
+      <span class="item-summary">${escapeHtml(summary)}</span>`;
       // 带 slug + sections 的条目有详情页，整行渲染为链接；否则维持静态条目
       return m.slug && Array.isArray(m.sections)
         ? `  <li><a href="/${game.slug}/materials/${m.slug}/">${body}</a></li>`

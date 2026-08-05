@@ -47,29 +47,35 @@ export function siteHeader(site, games, currentSlug = '', guideSlug = '') {
 </header>`;
 }
 
-/** 页脚：超大描边空心收尾字 + 三栏结构（B站 / 抖音二维码+引导语 / 版权与免责声明）。 */
+/** 页脚：超大描边空心收尾字 + 三栏结构（B站 / 抖音 / 版权与免责声明）。 */
 export function siteFooter(site) {
   return `<footer class="site-footer">
   <p class="site-footer__outline" aria-hidden="true">XINGCHUAN</p>
   <div class="site-footer__grid">
     <div class="site-footer__col">
       ${microLabel('BILIBILI / 关注')}
-      <a class="site-footer__bilibili" href="${escapeHtml(site.bilibiliUrl)}" target="_blank" rel="noopener">B站主页：xingchuan（星川）</a>
+      <a class="site-footer__link" href="${escapeHtml(site.bilibiliUrl)}" target="_blank" rel="noopener">
+        <span class="site-footer__link-icon">📺</span>
+        <span class="site-footer__link-text">B站：xingchuan（星川）</span>
+      </a>
     </div>
     <div class="site-footer__col">
       ${microLabel('DOUYIN / 视频讲解')}
-      <div class="site-footer__douyin">
-        <a class="site-footer__douyin-link" href="${escapeHtml(site.douyinUrl || 'https://v.douyin.com/vdEFIdcFuVU/')}" target="_blank" rel="noopener">
-          <span class="site-footer__douyin-icon">🎵</span>
-          <span class="site-footer__douyin-text">抖音：${escapeHtml(site.douyinName || '星川游戏菌【七日世界】')}</span>
-        </a>
-        <p>${escapeHtml(site.douyinGuide)}</p>
-      </div>
+      <a class="site-footer__link" href="${escapeHtml(site.douyinUrl || 'https://v.douyin.com/vdEFIdcFuVU/')}" target="_blank" rel="noopener">
+        <span class="site-footer__link-icon">🎵</span>
+        <span class="site-footer__link-text">抖音：星川游戏菌</span>
+      </a>
     </div>
     <div class="site-footer__col">
+      ${microLabel('XIAOHONGSHU / 图文')}
+      <a class="site-footer__link" href="${escapeHtml(site.xiaohongshuUrl || '#')}" target="_blank" rel="noopener">
+        <span class="site-footer__link-icon">📕</span>
+        <span class="site-footer__link-text">小红书：${escapeHtml(site.xiaohongshuName || '星川游戏菌')}</span>
+      </a>
+    </div>
+    <div class="site-footer__col site-footer__col--wide">
       ${microLabel('NOTICE / 声明')}
-      <p class="site-footer__copyright">${escapeHtml(site.copyright)}</p>
-      <p class="site-footer__disclaimer">${escapeHtml(site.disclaimer)}</p>
+      <p class="site-footer__notice">${escapeHtml(site.copyright)} ${escapeHtml(site.disclaimer)}</p>
     </div>
   </div>
 </footer>`;

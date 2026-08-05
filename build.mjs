@@ -53,7 +53,7 @@ const gameData = {
     materials: readJson('once-human/materials.json'),
     mechanics: readJson('once-human/mechanics.json'),
     changelog: readJson('once-human/changelog.json'),
-    collection: readJson('once-human/collection.json'),
+    codex: readJson('once-human/codex.json'),
   },
 };
 
@@ -182,6 +182,7 @@ function sectionsOf(game) {
   return [
     { kind: 'builds', data: d.builds },
     { kind: 'materials', data: d.materials },
+    { kind: 'materials', data: d.codex },
     { kind: 'mechanics', data: d.mechanics },
     { kind: 'updates', data: d.changelog },
   ].map(({ kind, data }) => ({
@@ -245,6 +246,14 @@ for (const game of games) {
     if (item.slug && Array.isArray(item.sections)) {
       const url = `${base}/updates/${item.slug}/`;
       addPage(url, renderGuideDetail({ site, games, game, section: d.changelog, item, canonical: canonicalOf(url) }));
+    }
+  }
+  // 万物图鉴
+  addPage(`${base}/codex/`, renderMaterialsList({ site, games, game, data: d.codex, canonical: canonicalOf(`${base}/codex/`) }));
+  for (const item of d.codex.items) {
+    if (item.slug && Array.isArray(item.sections)) {
+      const url = `${base}/codex/${item.slug}/`;
+      addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url) }));
     }
   }
 }

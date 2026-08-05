@@ -876,3 +876,42 @@ tbody tr:last-child td { border-bottom: none; }
   font-size: 14px;
   font-weight: 600;
 }
+/* ---------- 页脚链接 ---------- */
+.site-footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.site-footer__link:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.site-footer__link-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.site-footer__link-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* ---------- 页脚宽列和紧凑声明 ---------- */
+.site-footer__col--wide {
+  grid-column: 1 / -1;
+}
+
+.site-footer__notice {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.5;
+  margin-top: 8px;
+}

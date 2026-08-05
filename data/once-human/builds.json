@@ -1,9 +1,9 @@
 {
-    "section":  "配装推荐",
+    "section":  "流派配装",
     "slug":  "builds",
     "description":  "异象轮盘 S4 赛季主流配装：新手开荒双发电弩、灼烧流、爆弹流、碎弹流，武器、装备、模组词条与材料需求一览。",
-    "seoTitle":  "七日世界配装推荐 - xingchuan",
-    "seoDescription":  "七日世界配装推荐汇总：新手PVE开荒双发电弩、RPD要爆炸了灼烧流、大白鲨爆弹流、章鱼烤圈圈灼烧流、最后的勇气碎弹流，模组词条与材料需求持续更新。",
+    "seoTitle":  "七日世界流派配装 - xingchuan",
+    "seoDescription":  "七日世界流派配装汇总：新手PVE开荒双发电弩、RPD要爆炸了灼烧流、大白鲨爆弹流、章鱼烤圈圈灼烧流、最后的勇气碎弹流，模组词条与材料需求持续更新。",
     "items":  [
                   {
                       "slug":  "pve-starter",
