@@ -804,8 +804,9 @@ tbody tr:last-child td { border-bottom: none; }
 
 .quick-links__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  align-items: stretch;
 }
 
 .quick-links__item {
@@ -842,11 +843,6 @@ tbody tr:last-child td { border-bottom: none; }
   color: var(--dim);
 }
 
-@media (min-width: 768px) {
-  .quick-links__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 /* ---------- 抖音链接 ---------- */
 .site-footer__douyin-link {
   display: flex;
@@ -914,4 +910,99 @@ tbody tr:last-child td { border-bottom: none; }
   color: var(--dim);
   line-height: 1.5;
   margin-top: 8px;
+}
+/* ---------- 家具网格 ---------- */
+.furniture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.furniture-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.furniture-card:hover {
+  border-color: var(--accent);
+}
+
+.furniture-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.furniture-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.furniture-name {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+}
+
+@media (min-width: 480px) {
+  .furniture-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .furniture-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+/* ---------- 快捷入口二维码样式 ---------- */
+.quick-links__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 16px;
+  background: var(--raised);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.quick-links__qr img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.quick-links__qr-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quick-links__qr-desc {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .quick-links__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -12,7 +12,7 @@
  * 新增第 N 个主题：在 themes/ 下放 <name>.css / <name>-cover.svg / <name>-qr.svg 三个文件即可。
  * 不传任何环境变量时，按默认 ember-dark（暗夜暖橙）主题构建到 dist/。
  */
-import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -298,7 +298,22 @@ console.log(`[asset] ${bp('/assets/douyin-qr-placeholder.svg')}  (theme: ${THEME
 // assets/ 下其余与主题无关的静态文件（若有）原样拷贝
 const assetsSrc = join(ROOT, 'assets');
 for (const file of readdirSync(assetsSrc)) {
-  copyFileSync(join(assetsSrc, file), join(DIST, 'assets', file));
+  const srcPath = join(assetsSrc, file);
+  const destPath = join(DIST, 'assets', file);
+  // 如果是目录，递归复制
+  if (statSync(srcPath).isDirectory()) {
+    mkdirSync(destPath, { recursive: true });
+    for (const subFile of readdirSync(srcPath)) {
+      const subSrcPath = join(srcPath, subFile);
+      const subDestPath = join(destPath, subFile);
+      if (statSync(subSrcPath).isFile()) {
+        copyFileSync(subSrcPath, subDestPath);
+        console.log(`[asset] ${bp(`/assets/${file}/${subFile}`)}`);
+      }
+    }
+    continue;
+  }
+  copyFileSync(srcPath, destPath);
   console.log(`[asset] ${bp(`/assets/${file}`)}`);
 }
 

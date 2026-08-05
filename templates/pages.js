@@ -126,6 +126,11 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
       <span class="quick-links__name">星川助手</span>
       <span class="quick-links__desc">市场行情、数据查询</span>
     </a>
+    <div class="quick-links__qr">
+      <img src="/assets/wechat-mini-program.png" alt="微信小程序 回响宝典 二维码" width="120" height="120" loading="lazy">
+      <span class="quick-links__qr-name">微信小程序</span>
+      <span class="quick-links__qr-desc">回响宝典</span>
+    </div>
   </div>
 </section>
 <ol class="sec-index">
@@ -348,6 +353,13 @@ ${rows}
     </tbody>
   </table>
 </div>`;
+    }
+    if (b.type === 'furniture-grid') {
+      const cards = (b.items || []).map((item) => `    <div class="furniture-card">
+      <div class="furniture-icon"><img src="/${escapeHtml(item.icon)}" alt="${escapeHtml(item.name)}" loading="lazy"></div>
+      <div class="furniture-name">${escapeHtml(item.name)}</div>
+    </div>`).join('\n');
+      return `<div class="furniture-grid">\n${cards}\n</div>`;
     }
     if (b.type === 'note') {
       return `<p class="note">${microLabel('NOTE')}<span>${escapeHtml(b.text)}</span></p>`;

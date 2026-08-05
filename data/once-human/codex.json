@@ -5,103 +5,6 @@
     "description":  "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查",
     "items":  [
                   {
-                      "seoDescription":  "七日世界皮毛系统详解：荒原狼皮、月兆狼皮、月兆兔皮、金羊毛、星临牛皮等各类皮毛的获取方式与制作武器效果。",
-                      "slug":  "fur-guide",
-                      "seoTitle":  "七日世界皮毛获取与效果详解 - xingchuan",
-                      "summary":  "七日世界皮毛系统详解：各类皮毛的获取方式与制作武器效果",
-                      "sections":  [
-                                       {
-                                           "heading":  "皮毛类型与效果",
-                                           "blocks":  [
-                                                          {
-                                                              "text":  "七日世界中，皮毛是装备的重要附加属性，不同皮毛提供不同效果。以下是各类型皮毛的效果详解：",
-                                                              "type":  "paragraph"
-                                                          },
-                                                          {
-                                                              "items":  [
-                                                                            "荒原狼皮：耐力+20、冲刺速度+5%、移速+6%",
-                                                                            "月兆狼皮：通用皮毛，无特殊效果",
-                                                                            "月兆兔皮：空中免伤+7%、四抗性+5、跳跃高度+8%",
-                                                                            "月兆羊毛：低血免伤↑上限7%",
-                                                                            "金羊毛：通用金色皮毛",
-                                                                            "星临牛皮：耐力≥120枪械+8%、空中+16%",
-                                                                            "星临狐皮：特殊效果",
-                                                                            "梦域鹿皮：特殊效果",
-                                                                            "群山牛皮：特殊效果",
-                                                                            "浮冰熊皮：特殊效果"
-                                                                        ],
-                                                              "type":  "list"
-                                                          }
-                                                      ]
-                                       },
-                                       {
-                                           "heading":  "皮毛获取方式",
-                                           "blocks":  [
-                                                          {
-                                                              "text":  "皮毛主要通过狩猎动物获得，不同动物掉落不同皮毛：",
-                                                              "type":  "paragraph"
-                                                          },
-                                                          {
-                                                              "items":  [
-                                                                            "狼：掉落狼皮（荒原狼皮、月兆狼皮）",
-                                                                            "兔：掉落兔皮（月兆兔皮、金色兔皮）",
-                                                                            "羊：掉落羊毛（月兆羊毛、金羊毛）",
-                                                                            "牛：掉落牛皮（星临牛皮、群山牛皮）",
-                                                                            "熊：掉落熊皮（浮冰熊皮）",
-                                                                            "鹿：掉落鹿皮（梦域鹿皮）",
-                                                                            "狐：掉落狐皮（星临狐皮）"
-                                                                        ],
-                                                              "type":  "list"
-                                                          }
-                                                      ]
-                                       },
-                                       {
-                                           "heading":  "皮毛在制作武器时的效果",
-                                           "blocks":  [
-                                                          {
-                                                              "text":  "皮毛主要用于防具制作，不同部位使用不同皮毛可获得不同效果：",
-                                                              "type":  "paragraph"
-                                                          },
-                                                          {
-                                                              "items":  [
-                                                                            "头盔：月兆羊毛（低血免伤↑上限7%）",
-                                                                            "上身：星临牛皮（耐力\u003e120 枪械+8%/空中+16%）",
-                                                                            "下身：荒原狼皮（耐力20·冲刺速度+5%）",
-                                                                            "手套：荒原狼皮（任意金皮皆可）",
-                                                                            "鞋子：荒原狼皮（移速+6%）"
-                                                                        ],
-                                                              "type":  "list"
-                                                          }
-                                                      ]
-                                       },
-                                       {
-                                           "heading":  "推荐皮毛搭配",
-                                           "blocks":  [
-                                                          {
-                                                              "text":  "根据不同流派，推荐以下皮毛搭配：",
-                                                              "type":  "paragraph"
-                                                          },
-                                                          {
-                                                              "items":  [
-                                                                            "跳狙流：4×月兆兔皮（空中免伤+7%、跳跃高度+8%）",
-                                                                            "耐力流：4×荒原狼皮（耐力+20、冲刺速度+5%、移速+6%）",
-                                                                            "通用流：月兆羊毛+星临牛皮+荒原狼皮混搭"
-                                                                        ],
-                                                              "type":  "list"
-                                                          }
-                                                      ]
-                                       }
-                                   ],
-                      "name":  "皮毛：荒原狼皮",
-                      "updatedAt":  "2026-08-05",
-                      "status":  "完整",
-                      "title":  "皮毛获取与效果详解",
-                      "info":  {
-                                   "season":  "异象轮盘 S4 · 引力之渊",
-                                   "updated":  "2026-08-05"
-                               }
-                  },
-                  {
                       "seoDescription":  "七日世界集市悬赏家具配方图鉴：44款家具配方展示，包含家具名称和图标。",
                       "slug":  "furniture-recipes",
                       "seoTitle":  "七日世界集市悬赏家具配方图鉴 - xingchuan",
@@ -116,52 +19,184 @@
                                                           },
                                                           {
                                                               "items":  [
-                                                                            "铁丝网护栏",
-                                                                            "长条铝制吊灯",
-                                                                            "棱纹黑白地垫",
-                                                                            "一提饮品",
-                                                                            "橙色地垫",
-                                                                            "镶边矮木桌",
-                                                                            "蓝色折叠椅",
-                                                                            "木框碎花静物画",
-                                                                            "铁艺壁挂框",
-                                                                            "办公矮柜",
-                                                                            "金缕圆茶几",
-                                                                            "简约灰椅",
-                                                                            "矮款开放柜",
-                                                                            "双层储纳车",
-                                                                            "原木高低花架",
-                                                                            "简易洗手台",
-                                                                            "弯管台灯",
-                                                                            "古铜圆镜",
-                                                                            "黄铜弯线吊灯",
-                                                                            "藤编包边圆镜",
-                                                                            "联排布艺沙发",
-                                                                            "素木储物柜",
-                                                                            "深栗实木斗柜",
-                                                                            "虎皮兰盆栽",
-                                                                            "原木多层置物架",
-                                                                            "铜盆室内绿植",
-                                                                            "蜂巢错落架",
-                                                                            "红釉曲臂灯",
-                                                                            "奶黄扶手椅",
-                                                                            "双层简易茶几",
-                                                                            "立式画框·一型",
-                                                                            "机械闹铃",
-                                                                            "金属报刊架",
-                                                                            "倒挂杯影灯",
-                                                                            "石质垃圾桶",
-                                                                            "红垫木靠背椅",
-                                                                            "红色壁灯",
-                                                                            "整齐的一排书",
-                                                                            "欧式典雅挂画",
-                                                                            "立式饮水机",
-                                                                            "户外工程探照灯",
-                                                                            "纯白方茶几",
-                                                                            "四格壁挂木柜",
-                                                                            "双格木茶几"
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_1.png",
+                                                                                "name":  "铁丝网护栏"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_2.png",
+                                                                                "name":  "长条铝制吊灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_3.png",
+                                                                                "name":  "棱纹黑白地垫"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_4.png",
+                                                                                "name":  "一提饮品"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_5.png",
+                                                                                "name":  "橙色地垫"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_6.png",
+                                                                                "name":  "镶边矮木桌"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_7.png",
+                                                                                "name":  "蓝色折叠椅"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_8.png",
+                                                                                "name":  "木框碎花静物画"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_9.png",
+                                                                                "name":  "铁艺壁挂框"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_10.png",
+                                                                                "name":  "办公矮柜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_11.png",
+                                                                                "name":  "金缕圆茶几"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_12.png",
+                                                                                "name":  "简约灰椅"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_13.png",
+                                                                                "name":  "矮款开放柜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_14.png",
+                                                                                "name":  "双层储纳车"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_15.png",
+                                                                                "name":  "原木高低花架"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_16.png",
+                                                                                "name":  "简易洗手台"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_17.png",
+                                                                                "name":  "弯管台灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_18.png",
+                                                                                "name":  "古铜圆镜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_19.png",
+                                                                                "name":  "黄铜弯线吊灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_20.png",
+                                                                                "name":  "藤编包边圆镜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_21.png",
+                                                                                "name":  "联排布艺沙发"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_22.png",
+                                                                                "name":  "素木储物柜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_23.png",
+                                                                                "name":  "深栗实木斗柜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_24.png",
+                                                                                "name":  "虎皮兰盆栽"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_25.png",
+                                                                                "name":  "原木多层置物架"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_26.png",
+                                                                                "name":  "铜盆室内绿植"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_27.png",
+                                                                                "name":  "蜂巢错落架"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_28.png",
+                                                                                "name":  "红釉曲臂灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_29.png",
+                                                                                "name":  "奶黄扶手椅"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_30.png",
+                                                                                "name":  "双层简易茶几"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_31.png",
+                                                                                "name":  "立式画框·一型"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_32.png",
+                                                                                "name":  "机械闹铃"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_33.png",
+                                                                                "name":  "金属报刊架"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_34.png",
+                                                                                "name":  "倒挂杯影灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_35.png",
+                                                                                "name":  "石质垃圾桶"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_36.png",
+                                                                                "name":  "红垫木靠背椅"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_37.png",
+                                                                                "name":  "红色壁灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_38.png",
+                                                                                "name":  "整齐的一排书"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_39.png",
+                                                                                "name":  "欧式典雅挂画"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_40.png",
+                                                                                "name":  "立式饮水机"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_41.png",
+                                                                                "name":  "户外工程探照灯"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_42.png",
+                                                                                "name":  "纯白方茶几"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_43.png",
+                                                                                "name":  "四格壁挂木柜"
+                                                                            },
+                                                                            {
+                                                                                "icon":  "assets/furniture/furniture_44.png",
+                                                                                "name":  "双格木茶几"
+                                                                            }
                                                                         ],
-                                                              "type":  "list"
+                                                              "type":  "furniture-grid"
                                                           }
                                                       ]
                                        }
