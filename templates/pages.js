@@ -422,8 +422,9 @@ export function renderMaterialsList({ site, games, game, data, canonical }) {
       ${meta ? `<span class="item-meta-row">${meta}</span>` : ''}
       <span class="item-summary">${escapeHtml(summary)}</span>`;
       // 带 slug + sections 的条目有详情页，整行渲染为链接；否则维持静态条目
+      // 链接路径用 data.slug（本渲染器被 materials 与 codex 两个板块复用，不能写死 materials）
       return m.slug && Array.isArray(m.sections)
-        ? `  <li><a href="/${game.slug}/materials/${m.slug}/">${body}</a></li>`
+        ? `  <li><a href="/${game.slug}/${data.slug}/${m.slug}/">${body}</a></li>`
         : `  <li><div class="list-static">${body}</div></li>`;
     })
     .join('\n');

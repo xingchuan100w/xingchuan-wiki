@@ -80,8 +80,8 @@ function sectionPreview(game, kind, data, count) {
           summary: item.summary || `${item.location} · ${item.route}`,
           href:
             item.slug && Array.isArray(item.sections)
-              ? `/${game.slug}/materials/${item.slug}/`
-              : `/${game.slug}/materials/`,
+              ? `/${game.slug}/${data.slug}/${item.slug}/`
+              : `/${game.slug}/${data.slug}/`,
         };
       case 'mechanics':
         return {
@@ -128,7 +128,7 @@ function sectionIndex(game, kind, data) {
           title: item.name,
           tags: [item.location, item.respawn],
           summary: item.summary || item.route,
-          href: hasDetail ? `${base}/materials/${item.slug}/` : `${base}/materials/`,
+          href: hasDetail ? `${base}/${data.slug}/${item.slug}/` : `${base}/${data.slug}/`,
         };
       }
       case 'mechanics': {
