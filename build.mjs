@@ -53,6 +53,7 @@ const gameData = {
     materials: readJson('once-human/materials.json'),
     mechanics: readJson('once-human/mechanics.json'),
     changelog: readJson('once-human/changelog.json'),
+    collection: readJson('once-human/collection.json'),
   },
 };
 
