@@ -1,4 +1,4 @@
-﻿// components.js — 全局组件：顶部关注条 followBar、站点头部 siteHeader、页脚 siteFooter、列表/徽章等
+// components.js — 全局组件：顶部关注条 followBar、站点头部 siteHeader、页脚 siteFooter、列表/徽章等
 // 每个组件一个函数：改一处，全站生效。
 
 import { escapeHtml } from './base.js';
@@ -59,7 +59,10 @@ export function siteFooter(site) {
     <div class="site-footer__col">
       ${microLabel('DOUYIN / 视频讲解')}
       <div class="site-footer__douyin">
-        <img src="/assets/douyin-qr-placeholder.svg" alt="抖音二维码占位" width="112" height="112" loading="lazy">
+        <a class="site-footer__douyin-link" href="${escapeHtml(site.douyinUrl || 'https://v.douyin.com/vdEFIdcFuVU/')}" target="_blank" rel="noopener">
+          <span class="site-footer__douyin-icon">🎵</span>
+          <span class="site-footer__douyin-text">抖音：${escapeHtml(site.douyinName || '星川游戏菌【七日世界】')}</span>
+        </a>
         <p>${escapeHtml(site.douyinGuide)}</p>
       </div>
     </div>
