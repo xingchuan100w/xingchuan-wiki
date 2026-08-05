@@ -47,10 +47,12 @@ export function siteHeader(site, games, currentSlug = '', guideSlug = '') {
 </header>`;
 }
 
-/** 页脚：超大描边空心收尾字 + 三栏结构（B站 / 抖音 / 版权与免责声明）。 */
-export function siteFooter(site) {
+/** 页脚：超大描边空心收尾字 + 三栏结构（B站 / 抖音 / 版权与免责声明）。
+ *  footerWord：页脚装饰大字（默认 GAME GUIDES）。刻意用与品牌（页头 xingchuan / hero 大字）
+ *  无关的词，且不绑定任何单一游戏（站点未来规划多游戏），呼应首页「GAME GUIDES / BY 星川游戏菌」标签。 */
+export function siteFooter(site, footerWord = 'GAME GUIDES') {
   return `<footer class="site-footer">
-  <p class="site-footer__outline" aria-hidden="true">XINGCHUAN</p>
+  <p class="site-footer__outline" aria-hidden="true">${escapeHtml(footerWord)}</p>
   <div class="site-footer__grid">
     <div class="site-footer__col">
       ${microLabel('BILIBILI / 关注')}

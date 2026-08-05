@@ -21,6 +21,17 @@ function latinName(fullName) {
   return m ? m[0].trim() : '';
 }
 
+/** 详情页右侧本页目录（桌面 ≥1024px 显示，移动端隐藏）。items: [{ no, heading }]，锚点 #sec-<no>。 */
+function tocNav(items) {
+  const lis = items
+    .map(
+      (it) =>
+        `  <li><a href="#sec-${it.no}"><span class="toc__no" aria-hidden="true">§${it.no}</span>${escapeHtml(it.heading)}</a></li>`
+    )
+    .join('\n');
+  return `<nav class="toc" aria-label="本页目录">\n  ${microLabel('ON THIS PAGE')}\n  <ul class="toc__list">\n${lis}\n  </ul>\n</nav>`;
+}
+
 /** 首页 = 游戏导航页：超大品牌 hero + 游戏栏目入口大块 + 热门攻略索引。 */
 export function renderHomePage({ site, games, hot, canonical }) {
   const gameEntries = games
@@ -247,7 +258,7 @@ export function renderBuildDetail({ site, games, game, build, canonical }) {
   const paras = build.body.map((p) => `<p>${escapeHtml(p)}</p>`).join('\n');
 
   const secH = (no, text) =>
-    `<h2 class="sec-h"><span class="sec-h__no" aria-hidden="true">§${no}</span>${escapeHtml(text)}</h2>`;
+    `<h2 class="sec-h" id="sec-${no}"><span class="sec-h__no" aria-hidden="true">§${no}</span>${escapeHtml(text)}</h2>`;
 
   // 文中视频卡：按 video.after 指定的小节（s1-s5）插入到该小节内容之后；
   // after 缺失或不匹配时归入 s5（文章末尾）；videos 字段缺失时全部为空、不渲染。
@@ -260,7 +271,9 @@ export function renderBuildDetail({ site, games, game, build, canonical }) {
   }
   const vids = (id) => videoSlots[id].filter(Boolean).join('\n');
 
-  const inner = `${crumb(`/${game.slug}/builds/`, `${game.name}配装推荐`)}
+  const inner = `<div class="detail-layout">
+<article>
+${crumb(`/${game.slug}/builds/`, `${game.name}配装推荐`)}
 <h1>${escapeHtml(game.name)}${escapeHtml(build.title)}</h1>
 <p class="meta-row">${metaTag(build.status)}${metaTag(`更新 ${build.updatedAt}`)}${metaTag(`BY ${site.name.toUpperCase()}`)}</p>
 ${infoCard(build.info)}
@@ -294,7 +307,16 @@ ${matRows}
 ${vids('s4')}
 ${secH(5, '配装思路')}
 ${paras}
-${vids('s5')}`;
+${vids('s5')}
+</article>
+${tocNav([
+  { no: 1, heading: '适用场景' },
+  { no: 2, heading: '武器/装备列表' },
+  { no: 3, heading: '模组/词条建议' },
+  { no: 4, heading: '材料需求' },
+  { no: 5, heading: '配装思路' },
+])}
+</div>`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -332,7 +354,7 @@ ${vids('s5')}`;
  */
 export function renderGuideDetail({ site, games, game, section, item, canonical }) {
   const secH = (no, text) =>
-    `<h2 class="sec-h"><span class="sec-h__no" aria-hidden="true">§${no}</span>${escapeHtml(text)}</h2>`;
+    `<h2 class="sec-h" id="sec-${no}"><span class="sec-h__no" aria-hidden="true">§${no}</span>${escapeHtml(text)}</h2>`;
 
   const renderBlock = (b) => {
     if (!b || typeof b !== 'object') return '';
@@ -377,11 +399,16 @@ ${rows}
     metaTag(`BY ${site.name.toUpperCase()}`),
   ].join('');
 
-  const inner = `${crumb(`/${game.slug}/${section.slug}/`, `${game.name}${section.section}`)}
+  const inner = `<div class="detail-layout">
+<article>
+${crumb(`/${game.slug}/${section.slug}/`, `${game.name}${section.section}`)}
 <h1>${escapeHtml(game.name)}${escapeHtml(item.title)}</h1>
 <p class="meta-row">${meta}</p>
 ${infoCard(item.info)}
-${secs}`;
+${secs}
+</article>
+${tocNav((item.sections || []).map((s, i) => ({ no: i + 1, heading: s.heading })))}
+</div>`;
 
   const jsonLd = {
     "@context": "https://schema.org",
