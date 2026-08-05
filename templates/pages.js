@@ -189,7 +189,7 @@ ${blocks}`;
 
   return renderBase({
     title: `${game.name}攻略大全：配装/材料/周本/版本更新一站式目录 - xingchuan`,
-    description: `${game.name}攻略大全：配装推荐、材料点位速查、周本机制攻略与版本更新日志全部条目汇总目录，一站式速查，持续更新，建议收藏。`,
+    description: `${game.name}攻略大全：配装推荐、生产与制作相关、周本机制攻略与版本更新日志全部条目汇总目录，一站式速查，持续更新，建议收藏。`,
     canonical,
     content: shell(site, games, game.slug, inner, game.slug),
   });
@@ -396,7 +396,7 @@ ${secs}`;
   });
 }
 
-/** 材料点位速查列表页：与机制页同款条目列表（材料名 + 括号元数据[区域][刷新] + 摘要），带详情页的条目整条可点。 */
+/** 生产与制作相关列表页：与机制页同款条目列表（材料名 + 括号元数据[区域][刷新] + 摘要），带详情页的条目整条可点。 */
 export function renderMaterialsList({ site, games, game, data, canonical }) {
   const blocks = data.items
     .map((m) => {
