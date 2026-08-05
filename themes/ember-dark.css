@@ -843,7 +843,13 @@ tbody tr:last-child td { border-bottom: none; }
 .quick-links__icon {
   font-size: 28px;
   line-height: 1;
+  color: var(--text);
 }
+.quick-links__icon svg {
+  display: block;
+  transition: color 0.2s;
+}
+.quick-links__item:hover .quick-links__icon { color: var(--accent); }
 
 .quick-links__name {
   font-size: 16px;
@@ -1000,11 +1006,22 @@ tbody tr:last-child td { border-bottom: none; }
   background: var(--accent-soft);
 }
 
+.quick-links__qr-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
 .quick-links__qr img {
   width: 88px;
   height: 88px;
   border-radius: 4px;
   object-fit: contain;
+  background: #fff; /* 二维码白底，暗色卡片上更清晰 */
+  box-sizing: border-box;
 }
 
 .quick-links__qr-name {

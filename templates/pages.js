@@ -123,22 +123,22 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
   <h2 class="quick-links__title">快捷入口</h2>
   <div class="quick-links__grid">
     <a class="quick-links__item" href="https://qrsj-map.lzhailalu.com/" target="_blank" rel="noopener">
-      <span class="quick-links__icon">🗺️</span>
+      <span class="quick-links__icon" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5c-4.1 0-7.4 3.3-7.4 7.4 0 5.5 7.4 13.6 7.4 13.6s7.4-8.1 7.4-13.6c0-4.1-3.3-7.4-7.4-7.4Z"/><circle cx="14" cy="10.8" r="2.6"/></svg></span>
       <span class="quick-links__name">交互地图</span>
       <span class="quick-links__desc">资源点位、据点标记</span>
     </a>
     <a class="quick-links__item" href="https://lzhailalu.com/" target="_blank" rel="noopener">
-      <span class="quick-links__icon">⚔️</span>
+      <span class="quick-links__icon" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="8" height="8" rx="1.6"/><rect x="15.5" y="4.5" width="8" height="8" rx="1.6"/><rect x="10" y="15.5" width="8" height="8" rx="1.6"/></svg></span>
       <span class="quick-links__name">配装器</span>
       <span class="quick-links__desc">装备搭配、模组模拟</span>
     </a>
     <a class="quick-links__item" href="https://market.lzhailalu.com/" target="_blank" rel="noopener">
-      <span class="quick-links__icon">🤖</span>
+      <span class="quick-links__icon" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="18" height="12.5" rx="3"/><circle cx="11" cy="15.3" r="1.6"/><circle cx="17" cy="15.3" r="1.6"/><path d="M14 9V5.5M14 5.5h-4.2"/></svg></span>
       <span class="quick-links__name">星川助手</span>
       <span class="quick-links__desc">市场行情、数据查询</span>
     </a>
     <div class="quick-links__qr">
-      <img src="/assets/wechat-mini-program.png" alt="微信小程序 回响宝典 二维码" width="120" height="120" loading="lazy">
+      <span class="quick-links__qr-figure"><img src="/assets/wechat-mini-program.png" alt="微信小程序 回响宝典 二维码" width="120" height="120" loading="lazy"></span>
       <span class="quick-links__qr-name">微信小程序</span>
       <span class="quick-links__qr-desc">回响宝典</span>
     </div>
