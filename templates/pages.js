@@ -55,9 +55,12 @@ export function renderHomePage({ site, games, hot, canonical }) {
     .join('\n');
 
   const inner = `<section class="hero">
-  ${microLabel('GAME GUIDES / BY 星川游戏菌')}
-  <h1 class="hero__title"><span class="hero__zh">星川</span><span class="hero__latin" aria-hidden="true">xingchuan</span></h1>
-  <p class="lede hero__lede">七日世界攻略知识库——由 ${escapeHtml(site.brand)} 维护的玩家自制攻略站，手机端随时查。</p>
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__inner">
+    ${microLabel('GAME GUIDES / BY 星川游戏菌')}
+    <h1 class="hero__title"><span class="hero__zh">星川</span><span class="hero__latin" aria-hidden="true">xingchuan</span></h1>
+    <p class="lede hero__lede">七日世界攻略知识库——由 ${escapeHtml(site.brand)} 维护的玩家自制攻略站，手机端随时查。</p>
+  </div>
 </section>
 ${gameEntries}
 <h2 class="index-heading">${microLabel('INDEX / HOT')}热门攻略</h2>

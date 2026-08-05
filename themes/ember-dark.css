@@ -224,9 +224,31 @@ main {
 
 /* ---------- 首页 Hero ---------- */
 .hero {
+  position: relative;
   padding: 28px 0 26px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 8px;
+  isolation: isolate;
+}
+/* hero 背景图（绝对铺满容器，底部 70% 渐变压暗确保文字可读） */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/assets/hero-bg.jpeg");
+  background-size: cover;
+  background-position: center 60%;
+  background-color: var(--bg);
+}
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* 顶部轻压保留末日霞光，底部加重确保文字可读 */
+  background: linear-gradient(180deg, rgba(10, 9, 8, .35) 0%, rgba(10, 9, 8, .18) 30%, rgba(10, 9, 8, .55) 65%, rgba(10, 9, 8, .92) 100%);
+}
+.hero__inner {
+  padding: 4px 2px 0;
 }
 .hero .micro-label { color: var(--accent); }
 .hero__title { margin: 12px 0 10px; }
@@ -237,6 +259,8 @@ main {
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: .02em;
+  color: var(--text);
+  text-shadow: 0 2px 12px rgba(10, 9, 8, .65);
 }
 .hero__latin {
   display: block;
@@ -245,12 +269,13 @@ main {
   line-height: 1.02;
   letter-spacing: .01em;
   color: transparent;
-  -webkit-text-stroke: 1.5px var(--outline-stroke);
+  -webkit-text-stroke: 1.5px rgba(244, 220, 190, .85); /* 暖灰描边，呼应末日霞光 */
+  filter: drop-shadow(0 1px 3px rgba(10, 9, 8, .85));
 }
 @supports not (-webkit-text-stroke: 1px black) {
   .hero__latin, .site-footer__outline, .game-entry__outline { color: var(--accent); }
 }
-.hero__lede { margin-top: 14px; }
+.hero__lede { margin-top: 14px; color: var(--text); }
 
 /* ---------- 游戏栏目入口（首页大块） ---------- */
 .game-entry { border-bottom: 1px solid var(--line); }
