@@ -109,7 +109,6 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
 <p class="lede">${escapeHtml(game.fullName)} · ${escapeHtml(game.description)}</p>
 <ol class="sec-index">
 ${blocks}
-</ol>
 <section class="quick-links">
   ${microLabel('QUICK LINKS')}
   <h2 class="quick-links__title">快捷入口</h2>
@@ -131,6 +130,7 @@ ${blocks}
     </a>
   </div>
 </section>
+</ol>
 <p class="hub-cta">
   <a class="hub-cta__link" href="/${escapeHtml(game.slug)}/guide/">
     <span class="hub-cta__text">攻略大全 · 全部内容一页速查</span>
