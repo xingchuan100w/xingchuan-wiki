@@ -12,7 +12,7 @@
  * 新增第 N 个主题：在 themes/ 下放 <name>.css / <name>-cover.svg / <name>-qr.svg 三个文件即可。
  * 不传任何环境变量时，按默认 ember-dark（暗夜暖橙）主题构建到 dist/。
  */
-import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync, statSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -212,7 +212,11 @@ for (const game of games) {
   const base = `/${game.slug}`;
 
   // 栏目首页
-  addPage(`${base}/`, renderGameHome({ site, games, game, sections: sectionsOf(game), canonical: canonicalOf(`${base}/`) }));
+  // 封面图优先用 assets/<slug>-cover.jpeg（如小云雀生成的实拍氛围图）；不存在时回退主题 SVG 占位
+  const coverUrl = existsSync(join(ROOT, 'assets', `${game.slug}-cover.jpeg`))
+    ? `/assets/${game.slug}-cover.jpeg`
+    : `/assets/${game.slug}-cover.svg`;
+  addPage(`${base}/`, renderGameHome({ site, games, game, sections: sectionsOf(game), coverUrl, canonical: canonicalOf(`${base}/`) }));
 
   // 攻略大全 hub 页：四板块全部条目一页汇总
   addPage(`${base}/guide/`, renderGuideHub({ site, games, game, sections: guideSectionsOf(game), canonical: canonicalOf(`${base}/guide/`) }));

@@ -422,7 +422,15 @@ main {
   overflow: hidden;
   background: var(--raised);
 }
-.cover img { width: 100%; }
+.cover img {
+  width: 100%;
+  max-height: 420px; /* 横幅化：限高裁切，避免 16:9 原图吃掉首屏 */
+  object-fit: cover;
+  object-position: center 62%; /* 偏下保留底部暗色标题区 */
+}
+@media (min-width: 768px) {
+  .cover img { max-height: 460px; }
+}
 .cover__caption {
   position: absolute;
   left: 16px;
@@ -1047,8 +1055,8 @@ tbody tr:last-child td { border-bottom: none; }
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  height: 62%;
-  background: linear-gradient(180deg, transparent 0%, rgba(10, 9, 8, .68) 52%, rgba(10, 9, 8, .94) 100%);
+  height: 66%;
+  background: linear-gradient(180deg, transparent 0%, rgba(10, 9, 8, .72) 52%, rgba(10, 9, 8, .96) 100%);
   pointer-events: none;
 }
 .cover__caption { z-index: 1; }

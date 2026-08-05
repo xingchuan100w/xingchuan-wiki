@@ -87,8 +87,8 @@ ${linkList(hot)}`;
   });
 }
 
-/** 游戏栏目首页：SVG 封面横幅（叠加超大标题）+ 01-04 编号板块大列表。 */
-export function renderGameHome({ site, games, game, sections, canonical }) {
+/** 游戏栏目首页：SVG/JPEG 封面横幅（叠加超大标题）+ 01-04 编号板块大列表。coverUrl 由 build 传入（优先 JPEG 实拍图，回退主题 SVG）。 */
+export function renderGameHome({ site, games, game, sections, coverUrl, canonical }) {
   const latin = latinName(game.fullName);
   const blocks = sections
     .map((sec, i) => {
@@ -111,7 +111,7 @@ export function renderGameHome({ site, games, game, sections, canonical }) {
     .join('\n');
 
   const inner = `<figure class="cover">
-  <img src="/assets/${escapeHtml(game.slug)}-cover.svg" alt="${escapeHtml(game.coverPlaceholder)}" width="1200" height="420">
+  <img src="${escapeHtml(coverUrl)}" alt="${escapeHtml(game.coverPlaceholder)}" width="1200" height="675">
   <figcaption class="cover__caption">
     ${microLabel(latin ? `${latin} / 攻略专区` : '攻略专区')}
     <h1 class="cover__title">${escapeHtml(game.name)}攻略专区</h1>
