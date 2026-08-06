@@ -26,6 +26,7 @@ import {
   renderMaterialsList,
   renderMechanicsList,
   renderUpdatesList,
+  renderModsList,
 } from './templates/pages.js';
 
 // 部署时替换为真实域名（当前为占位域名，仅用于 canonical / sitemap / robots）
@@ -54,6 +55,7 @@ const gameData = {
     mechanics: readJson('once-human/mechanics.json'),
     changelog: readJson('once-human/changelog.json'),
     codex: readJson('once-human/codex.json'),
+    mods: readJson('once-human/mods.json'),
   },
 };
 
@@ -61,10 +63,10 @@ const pages = []; // { urlPath, html }
 const addPage = (urlPath, html) => pages.push({ urlPath, html });
 const canonicalOf = (urlPath) => `${BASE_URL}${urlPath}`;
 
-/** 从板块数据提取预览条目（标题/摘要/链接），count 为取前几条。 */
+/** 从板块数据提取预览条目（标题/摘要/链接），count 为取前几条。mods 板块无 status 字段（默认视为完整）。 */
 function sectionPreview(game, kind, data, count) {
   return data.items
-    .filter((item) => item.status === '完整') // 热门/列表预览过滤掉「整理中」占位条目，避免用户点开空白详情
+    .filter((item) => item.status === undefined || item.status === '完整') // 占位条目过滤；mods 等无 status 字段的板块默认全部通过
     .slice(0, count)
     .map((item) => {
     switch (kind) {
@@ -103,6 +105,12 @@ function sectionPreview(game, kind, data, count) {
             item.slug && Array.isArray(item.sections)
               ? `/${game.slug}/updates/${item.slug}/`
               : `/${game.slug}/updates/`,
+        };
+      case 'mods':
+        return {
+          title: `模组图鉴 · ${data.items.length} 个模组 · ${data.items.reduce((n,i)=>n+i.variants.length,0)} 个变体`,
+          summary: data.description,
+          href: `/${game.slug}/${data.slug}/`,
         };
       default:
         throw new Error(`未知板块类型: ${kind}`);
@@ -156,6 +164,14 @@ function sectionIndex(game, kind, data) {
               ? `${base}/updates/${item.slug}/`
               : `${base}/updates/`,
         };
+      case 'mods':
+        // 模组图鉴只有列表页（一页速查 101 模组 / 849 变体），hub 条目直接指到板块页
+        return {
+          title: `${item.name} · ${item.variants.length} 后缀`,
+          tags: [item.slot, item.glowing ? 'GLOW' : null].filter(Boolean),
+          summary: (item.variants[0]?.desc || '').slice(0, 60),
+          href: `${base}/${data.slug}/`,
+        };
       default:
         throw new Error(`未知板块类型: ${kind}`);
     }
@@ -171,6 +187,7 @@ function guideSectionsOf(game) {
     { kind: 'materials', data: d.materials, en: 'MATERIALS' },
     { kind: 'mechanics', data: d.mechanics, en: 'MECHANICS' },
     { kind: 'updates', data: d.changelog, en: 'CHANGELOG' },
+    { kind: 'mods', data: d.mods, en: 'MODS' },
   ].map(({ kind, data, en }) => ({
     title: data.section,
     en,
@@ -188,6 +205,7 @@ function sectionsOf(game) {
     { kind: 'materials', data: d.codex },
     { kind: 'mechanics', data: d.mechanics },
     { kind: 'updates', data: d.changelog },
+    { kind: 'mods', data: d.mods },
   ].map(({ kind, data }) => ({
     kind,
     data,
@@ -263,6 +281,8 @@ for (const game of games) {
       addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url) }));
     }
   }
+  // 模组图鉴（101 模组 / 849 后缀变体；纯列表页 + JS 交互，无详情页）
+  addPage(`${base}/mods/`, renderModsList({ site, games, game, data: d.mods, canonical: canonicalOf(`${base}/mods/`) }));
 }
 
 // ---------- 清空并重建 dist/ ----------

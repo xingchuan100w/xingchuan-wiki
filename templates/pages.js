@@ -544,3 +544,351 @@ ${blocks}
     content: shell(site, games, game.slug, inner),
   });
 }
+/**
+ * 模组图鉴列表页：101 模组 × 33 后缀变体，单页全量展示 + 客户端 JS 筛选/等级联动。
+ * 卡片默认显示第一个变体（按后缀优先级：通用 > 异能 > 暴烈），切后缀由 JS 替换 desc/icon/extra。
+ */
+export function renderModsList({ site, games, game, data, canonical }) {
+  // 后缀优先级（默认显示 + 排序权重）
+  const suffixPriority = ['通用', '异能', '暴烈', '生存', '精准'];
+  const getDefaultVariant = (variants) => {
+    for (const p of suffixPriority) {
+      const v = variants.find((x) => x.suffix === p);
+      if (v) return v;
+    }
+    return variants[0];
+  };
+
+  // 流派 ID → 中文流派名（与 gen-mods.mjs 一致）
+  const GENRE_NAMES = { 0: '全部基础', 301: '灼烧', 302: '电涌', 303: '冰霜漩涡', 304: '猎人标记', 305: '重装阵地', 306: '不稳定爆弹', 307: '快枪手', 311: '弹射', 312: '碎弹' };
+  const GENRE_ORDER = [0, 301, 302, 303, 304, 305, 306, 307, 311, 312];
+
+  // 构建分组：武器（按流派） + 防具（按部位）
+  const slotOrder = ['武器', '头盔', '面罩', '上身', '手套', '下身', '鞋子'];
+  const weaponGenres = GENRE_ORDER.map(gId => ({ id: gId, name: GENRE_NAMES[gId] }));
+  const armorSlots = ['头盔', '面罩', '上身', '手套', '下身', '鞋子'];
+
+  // 武器各流派
+  function buildWeaponGroups(){
+    return weaponGenres.map(g => {
+      const items = data.items.filter(m => m.slot === '武器' && m.variants.some(v => v.genreLib === g.id));
+      if (items.length === 0) return null;
+      return { type: 'weapon', groupKey: 'weapon-' + g.id, title: '武器 · ' + g.name, items };
+    }).filter(Boolean);
+  }
+  // 防具各部位
+  function buildArmorGroups(){
+    return armorSlots.map(s => {
+      const items = data.items.filter(m => m.slot === s);
+      if (items.length === 0) return null;
+      return { type: 'armor', groupKey: 'armor-' + s, title: '防具 · ' + s, items };
+    }).filter(Boolean);
+  }
+
+  const groups = [...buildWeaponGroups(), ...buildArmorGroups()];
+
+  // 不再预渲染所有分组，改为客户端按流派 tab 切换渲染菱形 tile 网格
+  const groupBlocks = '';
+
+  // 流派 tab 列表（默认激活 301 灼烧——第一个有武器数据的流派）
+  const genreTabBtns = GENRE_ORDER.filter(gId => {
+    const cnt = data.items.filter(m => m.slot === '武器' && m.variants.some(v => v.genreLib === gId)).length;
+    return cnt > 0;
+  }).map((gId, i) => {
+    const cnt = data.items.filter(m => m.slot === '武器' && m.variants.some(v => v.genreLib === gId)).length;
+    return `<button type="button" class="mod-genre-tab${i === 0 ? ' is-active' : ''}" data-genre-id="${gId}">${escapeHtml(GENRE_NAMES[gId])}<span class="mod-genre-tab__count">${cnt}</span></button>`;
+  }).join('');
+
+  const slotTabBtns = ['武器', '头盔', '面罩', '上身', '手套', '下身', '鞋子'].map((s, i) =>
+    `<button type="button" class="mod-slot-tab${i === 0 ? ' is-active' : ''}" data-slot="${escapeHtml(s)}">${escapeHtml(s)}</button>`
+  ).join('');
+
+  // 把模组完整数据序列化到 JSON 岛（前端直接读）
+  const itemsJson = JSON.stringify(data.items.map(m => ({
+    name: m.name,
+    slot: m.slot,
+    glowing: m.glowing,
+    variants: m.variants.map(v => ({
+      suffix: v.suffix, desc: v.desc, iconFile: v.iconFile ? '/' + v.iconFile.replace(/^\//, '') : '',
+      isShiny: v.isShiny, shinyDesc: v.shinyDesc || '',
+      genreLib: v.genreLib, genreName: v.genreName,
+      applySlot: v.applySlot, applyRange: v.applyRange,
+      stats: v.stats.map(function(s) { return { name: s.name, desc: s.desc || s.name, values: s.values, descValues: s.descValues || [] }; }),
+    })),
+  })));
+
+  // itemsJson 仍需保留——注入到页面底部的 <script type="application/json" id="mods-data">
+
+  // 后缀筛选条（按全数据出现次数倒序）
+  const suffixCounts = {};
+  for (const m of data.items) for (const v of m.variants) suffixCounts[v.suffix] = (suffixCounts[v.suffix] || 0) + 1;
+  const suffixChips = ['全部', ...Object.entries(suffixCounts).sort((a, b) => b[1] - a[1]).map(([k]) => k)]
+    .map((s, i) => `<button type="button" class="mod-filter__chip${i === 0 ? ' is-active' : ''}" data-suffix-filter="${escapeHtml(s)}">${escapeHtml(s)}<span class="mod-filter__count">${s === '全部' ? data.items.length : (suffixCounts[s] || 0)}</span></button>`)
+    .join('');
+
+  // 部位筛选条
+  const slotChips = ['全部', '武器', '头盔', '面罩', '上身', '手套', '下身', '鞋子']
+    .map((s, i) => `<button type="button" class="mod-filter__chip${i === 0 ? ' is-active' : ''}" data-slot-filter="${escapeHtml(s)}">${escapeHtml(s)}</button>`)
+    .join('');
+
+  const inner = `${crumb(`/${game.slug}/`, `${game.name}专区`)}
+<p class="meta-row">${metaTag('SECTION')}${metaTag(data.section)}${metaTag(`${data.items.length} 模组 · ${data.items.reduce((n, i) => n + i.variants.length, 0)} 变体`)}</p>
+<h1>${escapeHtml(game.name)}${escapeHtml(data.section)}</h1>
+<p class="lede">${escapeHtml(data.description)}</p>
+
+<section class="mod-toolbar" aria-label="筛选与等级">
+  <div class="mod-toolbar__row">
+    <label class="mod-toolbar__label" for="mod-search">名称搜索</label>
+    <input type="search" id="mod-search" class="mod-toolbar__search" placeholder="输入模组名（如「碎弹」「火环」）" autocomplete="off">
+  </div>
+  <div class="mod-toolbar__row mod-toolbar__row--level">
+    <label class="mod-toolbar__label" for="mod-level">等级 <span class="mod-toolbar__level-val" data-role="level-val">17</span></label>
+    <input type="range" id="mod-level" class="mod-toolbar__slider" min="1" max="17" value="17" step="1">
+    <span class="mod-toolbar__hint">点击流派 → 表格直览各后缀数值 · 等级滑块联动</span>
+  </div>
+</section>
+
+<p class="mod-toolbar__count" data-role="visible-count">显示 ${data.items.length} / ${data.items.length} 个模组</p>
+
+<div class="mod-screen" data-role="mod-grid">
+  <!-- 顶部：身体部位 tab -->
+  <nav class="mod-slot-bar" aria-label="部位" data-role="slot-tabs">${slotTabBtns}</nav>
+
+  <!-- 武器流派 tab（防具部位时切换为「部位类型」tab） -->
+  <nav class="mod-genre-bar" aria-label="流派" data-role="genre-tabs">${genreTabBtns}</nav>
+
+  <!-- 模组行列表（左侧名称 + 右侧 tile 网格） -->
+  <div class="mod-list" data-role="mod-list"></div>
+  <div class="mod-detail-overlay" data-role="mod-detail-overlay"></div>
+  <div class="mod-detail" data-role="mod-detail">
+    <button class="mod-detail__close" data-role="mod-detail-close" aria-label="关闭">&times;</button>
+    <div data-role="mod-detail-content"></div>
+  </div>
+</div>
+
+<!-- 数据岛：必须放在 IIFE 之前，否则 IIFE 同步执行时找不到该节点 -->
+<script type="application/json" id="mods-data">${itemsJson}</script>
+
+<script>
+(function(){
+  var esc = function(s) { return String(s).replace(/[&<>"']/g, function(c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); };
+  var root = document.querySelector('[data-role=mod-grid]');
+  if (!root) return;
+  var search = document.getElementById('mod-search');
+  var level = document.getElementById('mod-level');
+  var levelVal = document.querySelector('[data-role=level-val]');
+  var slotTabsEl = root.querySelector('[data-role=slot-tabs]');
+  var genreTabsEl = root.querySelector('[data-role=genre-tabs]');
+  var modListEl = root.querySelector('[data-role=mod-list]');
+  var visibleCount = document.querySelector('[data-role=visible-count]');
+  var detailEl = root.querySelector('[data-role=mod-detail]');
+  var detailContent = root.querySelector('[data-role=mod-detail-content]');
+  var detailOverlay = root.querySelector('[data-role=mod-detail-overlay]');
+  var detailClose = root.querySelector('[data-role=mod-detail-close]');
+
+  var currentSlot = '武器';
+  var currentGenre = 301;
+
+  var ITEMS = (function(){ try { return JSON.parse(document.getElementById('mods-data').textContent); } catch(e) { return []; } })();
+
+  function levelToTier(lv){
+    lv = parseInt(lv) || 17;
+    if (lv <= 3) return 0;
+    if (lv <= 6) return 1;
+    if (lv <= 9) return 2;
+    if (lv <= 12) return 3;
+    if (lv <= 15) return 3;
+    return 4;
+  }
+
+  function fmt(v){
+    if (v === null || v === undefined) return '固定';
+    return (v * 100).toFixed(1) + '%';
+  }
+
+  function hideDetail() {
+    detailEl.classList.remove('is-open');
+  }
+
+  function positionDetail(mx, my) {
+    var dw = detailEl.offsetWidth || 340;
+    var dh = detailEl.offsetHeight || 300;
+    var ww = window.innerWidth;
+    var wh = window.innerHeight;
+    var gap = 14;
+    var left = mx + gap;
+    var top = my - Math.min(dh / 2, wh / 3);
+    if (left + dw > ww - 10) left = mx - dw - gap;
+    if (top < 10) top = 10;
+    if (top + dh > wh - 10) top = wh - dh - 10;
+    detailEl.style.left = left + 'px';
+    detailEl.style.top = top + 'px';
+  }
+
+  function showDetail(mod, vi, mx, my) {
+    var v = mod.variants[vi];
+    if (!v) return;
+    var lv = parseInt(level.value) || 17;
+    var tier = levelToTier(level.value);
+
+    var h = '<h3 class="mod-detail__title">' + esc(mod.name) + '<span class="mod-detail__title-sfx">＜' + esc(v.suffix) + '＞</span></h3>';
+    h += '<div class="mod-detail__sub">' + esc(v.applySlot || '') + (v.genreName ? ' \u00B7 ' + esc(v.genreName) : '') + '</div>';
+
+    if (v.iconFile) {
+      h += '<div class="mod-detail__icon-row"><img class="mod-detail__icon" src="' + esc(v.iconFile) + '" alt=""></div>';
+    }
+
+    if (v.desc) {
+      h += '<div class="mod-detail__desc">' + esc(v.desc) + '</div>';
+    }
+
+    h += '<div class="mod-detail__stats">';
+    for (var i = 0; i < (v.stats || []).length; i++) {
+      var st = v.stats[i];
+      var val = (st.values && st.values.length > 0) ? st.values[tier] : null;
+      var valStr = (val !== null && val !== undefined) ? fmt(val) : '固定';
+      var label = st.desc || st.name;
+      // 用 descValues[tier] 替换所有 {N} 占位符
+      var tierVals = (st.descValues && st.descValues.length > tier) ? st.descValues[tier] : null;
+      label = label.replace(/\{(\d)\}/g, function(_, n) {
+        var idx = parseInt(n) - 1;
+        if (tierVals && tierVals.length > idx && tierVals[idx] != null) {
+          if (tierVals && tierVals.length > idx && tierVals[idx] != null) {
+            var v = parseFloat(tierVals[idx]);
+            // buff 条目的 descValues 已是百分比(>1)，attr 条目是小数(<1)需×100
+            return v > 1 ? v.toFixed(1) : (v * 100).toFixed(1);
+          }
+        // 回退到 values 数组
+        if (st.values && st.values.length > tier && st.values[tier] != null && idx === 0) {
+          return fmt(st.values[tier]);
+        }
+        return '{' + n + '}';
+      });
+      h += '<div class="mod-detail__stat"><span class="mod-detail__stat-name">' + esc(label) + '</span><span class="mod-detail__stat-val">' + valStr + '</span></div>';
+    }
+    h += '</div>';
+
+    if (lv >= 17 && v.isShiny && v.shinyDesc) {
+      h += '<div class="mod-detail__shiny">\u2726 ' + esc(v.shinyDesc) + '</div>';
+    }
+
+    h += '<div class="mod-detail__sub" style="margin-top:8px;text-align:center;font-size:11px;">5级及以上，等级越高词条属性越高</div>';
+
+    detailContent.innerHTML = h;
+    detailEl.classList.add('is-open');
+    positionDetail(mx, my);
+  }
+
+  function renderList(){
+    var q = (search.value || '').trim().toLowerCase();
+    var list = ITEMS.filter(function(m) {
+      if (m.slot !== currentSlot) return false;
+      if (currentSlot === '武器' && !m.variants.some(function(v) { return v.genreLib === currentGenre; })) return false;
+      if (q && !m.name.toLowerCase().includes(q)) return false;
+      return true;
+    });
+    if (visibleCount) visibleCount.textContent = '显示 ' + list.length + ' / ' + ITEMS.length + ' 个模组';
+    var lv = parseInt(level.value) || 17;
+
+    if (list.length === 0) {
+      modListEl.innerHTML = '<div class="mod-list__empty">该分类暂无模组</div>';
+      return;
+    }
+
+    var html = '';
+    for (var mi = 0; mi < list.length; mi++) {
+      var m = list[mi];
+      var globalIdx = ITEMS.indexOf(m);
+      var v0 = m.variants[0] || {};
+      var metaParts = [];
+      if (v0.applySlot) metaParts.push(esc(v0.applySlot));
+      if (v0.genreName) metaParts.push(esc(v0.genreName));
+      var meta = metaParts.length ? '<div class="mod-row__meta">' + metaParts.join(' \u00B7 ') + '</div>' : '';
+
+      var tiles = '';
+      for (var vi = 0; vi < m.variants.length; vi++) {
+        var v = m.variants[vi];
+        var icon = v.iconFile ? '<img class="mod-tile__icon" src="' + esc(v.iconFile) + '" alt="" loading="lazy">' : '';
+        var glow = (v.isShiny && lv >= 17) ? '<span class="mod-tile__glow">\u2726</span>' : '';
+        var glowingAttr = v.isShiny ? ' data-glowing="1"' : '';
+        tiles += '<div class="mod-tile" data-mod="' + globalIdx + '" data-variant="' + vi + '"' + glowingAttr + '>'
+          + '<div class="mod-tile__diamond">'
+          + '<span class="mod-tile__level">' + esc(v.suffix) + '</span>'
+          + icon + glow
+          + '</div>'
+          + '</div>';
+      }
+
+      html += '<div class="mod-row">'
+        + '<div class="mod-row__label">'
+        + '<div class="mod-row__name">' + esc(m.name) + (m.glowing ? ' <span class="mod-card__star">\u2726</span>' : '') + '</div>'
+        + meta
+        + '</div>'
+        + '<div class="mod-row__tiles">' + tiles + '</div>'
+        + '</div>';
+    }
+    modListEl.innerHTML = html;
+
+    // 悬停 tile → 属性悬浮窗（跟随光标）
+    var tilesAll = modListEl.querySelectorAll('.mod-tile');
+    for (var ti = 0; ti < tilesAll.length; ti++) {
+      (function(tile) {
+        tile.addEventListener('mouseenter', function(e) {
+          var mi2 = parseInt(tile.dataset.mod);
+          var vi2 = parseInt(tile.dataset.variant);
+          showDetail(ITEMS[mi2], vi2, e.clientX, e.clientY);
+        });
+        tile.addEventListener('mousemove', function(e) {
+          positionDetail(e.clientX, e.clientY);
+        });
+        tile.addEventListener('mouseleave', function() {
+          hideDetail();
+        });
+      })(tilesAll[ti]);
+    }
+  }
+
+  // 鼠标离开整个列表区域时隐藏悬浮窗
+  modListEl.addEventListener('mouseleave', hideDetail);
+
+  // 部位 tab
+  slotTabsEl.addEventListener('click', function(e) {
+    var btn = e.target.closest('[data-slot]');
+    if (!btn) return;
+    slotTabsEl.querySelectorAll('.mod-slot-tab').forEach(function(b) { b.classList.toggle('is-active', b === btn); });
+    currentSlot = btn.dataset.slot;
+    genreTabsEl.style.display = currentSlot === '武器' ? '' : 'none';
+    if (currentSlot !== '武器') currentGenre = 0;
+    hideDetail();
+    renderList();
+  });
+
+  // 流派 tab
+  genreTabsEl.addEventListener('click', function(e) {
+    var btn = e.target.closest('[data-genre-id]');
+    if (!btn) return;
+    genreTabsEl.querySelectorAll('.mod-genre-tab').forEach(function(b) { b.classList.toggle('is-active', b === btn); });
+    currentGenre = parseInt(btn.dataset.genreId);
+    hideDetail();
+    renderList();
+  });
+
+  // 搜索 / 等级联动
+  search.addEventListener('input', renderList);
+  level.addEventListener('input', function() {
+    var lv = parseInt(level.value) || 17;
+    if (levelVal) levelVal.textContent = lv;
+    renderList();
+  });
+
+  renderList();
+})();
+</script>`;
+
+  return renderBase({
+    title: data.seoTitle,
+    description: data.seoDescription,
+    canonical,
+    content: shell(site, games, game.slug, inner),
+  });
+}
