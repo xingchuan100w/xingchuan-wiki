@@ -63,7 +63,10 @@ const canonicalOf = (urlPath) => `${BASE_URL}${urlPath}`;
 
 /** 从板块数据提取预览条目（标题/摘要/链接），count 为取前几条。 */
 function sectionPreview(game, kind, data, count) {
-  return data.items.slice(0, count).map((item) => {
+  return data.items
+    .filter((item) => item.status === '完整') // 热门/列表预览过滤掉「整理中」占位条目，避免用户点开空白详情
+    .slice(0, count)
+    .map((item) => {
     switch (kind) {
       case 'builds':
         return {

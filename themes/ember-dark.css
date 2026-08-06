@@ -567,7 +567,7 @@ table {
   font-size: 13px;
 }
 th, td {
-  padding: 11px 14px;
+  padding: 13px 14px;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--line-soft);
