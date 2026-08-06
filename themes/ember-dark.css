@@ -664,6 +664,31 @@ tbody tr:last-child td { border-bottom: none; }
   .hero { padding: 48px 0 36px; }
 }
 
+/* ---------- 配装一图流（详情页 h1 下方、info 卡上方的真图） ---------- */
+.build-image {
+  margin: 14px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--raised);
+}
+.build-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.build-image figcaption {
+  padding: 8px 12px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: var(--dim);
+  background: var(--bg);
+}
+@media (min-width: 768px) {
+  .build-image { max-width: 720px; margin-left: auto; margin-right: auto; }
+}
+
 /* ---------- 攻略信息卡（配装详情页头部，全主题共用，仅用 CSS 变量） ---------- */
 /* 容器：raised 底 + 1px 边框 + 6px 圆角；格子间用 1px gap 透出 line-soft 细分隔线（任意格数均整齐） */
 .info-card { margin: 16px 0 0; }

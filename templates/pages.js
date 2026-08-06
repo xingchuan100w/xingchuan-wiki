@@ -274,11 +274,18 @@ export function renderBuildDetail({ site, games, game, build, canonical }) {
   }
   const vids = (id) => videoSlots[id].filter(Boolean).join('\n');
 
+  const buildImage = build.image
+    ? `<figure class="build-image">
+  <a href="/${escapeHtml(build.image)}" target="_blank" rel="noopener"><img src="/${escapeHtml(build.image)}" alt="${escapeHtml(build.title)} 配装一图流（点击查看原图）" loading="lazy"></a>
+  <figcaption class="micro-label">BUILD INFOGRAPHIC / 配装一图流 · 点击查看原图</figcaption>
+</figure>`
+    : '';
   const inner = `<div class="detail-layout">
 <article>
 ${crumb(`/${game.slug}/builds/`, `${game.name}配装推荐`)}
 <h1>${escapeHtml(game.name)}${escapeHtml(build.title)}</h1>
 <p class="meta-row">${metaTag(build.status)}${metaTag(`更新 ${build.updatedAt}`)}${metaTag(`BY ${site.name.toUpperCase()}`)}</p>
+${buildImage}
 ${infoCard(build.info)}
 ${secH(1, '适用场景')}
 <p>${escapeHtml(build.scenario)}</p>
