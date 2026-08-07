@@ -1,215 +1,631 @@
 {
-    "slug":  "codex",
-    "seoDescription":  "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查。",
-    "section":  "万物图鉴",
-    "description":  "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查",
-    "items":  [
-                  {
-                      "seoDescription":  "七日世界集市悬赏家具配方图鉴：44款家具配方展示，包含家具名称和图标。",
-                      "slug":  "furniture-recipes",
-                      "seoTitle":  "七日世界集市悬赏家具配方图鉴 - xingchuan",
-                      "summary":  "集市悬赏家具配方图鉴：44款家具配方展示",
-                      "sections":  [
-                                       {
-                                           "heading":  "家具配方一览",
-                                           "blocks":  [
-                                                          {
-                                                              "text":  "集市悬赏家具配方图鉴，共44款家具配方：",
-                                                              "type":  "paragraph"
-                                                          },
-                                                          {
-                                                              "items":  [
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_1.png",
-                                                                                "name":  "铁丝网护栏"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_2.png",
-                                                                                "name":  "长条铝制吊灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_3.png",
-                                                                                "name":  "棱纹黑白地垫"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_4.png",
-                                                                                "name":  "一提饮品"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_5.png",
-                                                                                "name":  "橙色地垫"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_6.png",
-                                                                                "name":  "镶边矮木桌"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_7.png",
-                                                                                "name":  "蓝色折叠椅"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_8.png",
-                                                                                "name":  "木框碎花静物画"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_9.png",
-                                                                                "name":  "铁艺壁挂框"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_10.png",
-                                                                                "name":  "办公矮柜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_11.png",
-                                                                                "name":  "金缕圆茶几"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_12.png",
-                                                                                "name":  "简约灰椅"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_13.png",
-                                                                                "name":  "矮款开放柜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_14.png",
-                                                                                "name":  "双层储纳车"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_15.png",
-                                                                                "name":  "原木高低花架"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_16.png",
-                                                                                "name":  "简易洗手台"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_17.png",
-                                                                                "name":  "弯管台灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_18.png",
-                                                                                "name":  "古铜圆镜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_19.png",
-                                                                                "name":  "黄铜弯线吊灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_20.png",
-                                                                                "name":  "藤编包边圆镜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_21.png",
-                                                                                "name":  "联排布艺沙发"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_22.png",
-                                                                                "name":  "素木储物柜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_23.png",
-                                                                                "name":  "深栗实木斗柜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_24.png",
-                                                                                "name":  "虎皮兰盆栽"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_25.png",
-                                                                                "name":  "原木多层置物架"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_26.png",
-                                                                                "name":  "铜盆室内绿植"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_27.png",
-                                                                                "name":  "蜂巢错落架"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_28.png",
-                                                                                "name":  "红釉曲臂灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_29.png",
-                                                                                "name":  "奶黄扶手椅"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_30.png",
-                                                                                "name":  "双层简易茶几"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_31.png",
-                                                                                "name":  "立式画框·一型"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_32.png",
-                                                                                "name":  "机械闹铃"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_33.png",
-                                                                                "name":  "金属报刊架"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_34.png",
-                                                                                "name":  "倒挂杯影灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_35.png",
-                                                                                "name":  "石质垃圾桶"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_36.png",
-                                                                                "name":  "红垫木靠背椅"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_37.png",
-                                                                                "name":  "红色壁灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_38.png",
-                                                                                "name":  "整齐的一排书"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_39.png",
-                                                                                "name":  "欧式典雅挂画"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_40.png",
-                                                                                "name":  "立式饮水机"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_41.png",
-                                                                                "name":  "户外工程探照灯"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_42.png",
-                                                                                "name":  "纯白方茶几"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_43.png",
-                                                                                "name":  "四格壁挂木柜"
-                                                                            },
-                                                                            {
-                                                                                "icon":  "assets/furniture/furniture_44.png",
-                                                                                "name":  "双格木茶几"
-                                                                            }
-                                                                        ],
-                                                              "type":  "furniture-grid"
-                                                          }
-                                                      ]
-                                       }
-                                   ],
-                      "name":  "家具配方：集市悬赏",
-                      "updatedAt":  "2026-08-05",
-                      "status":  "完整",
-                      "title":  "集市悬赏家具配方图鉴",
-                      "info":  {
-                                   "season":  "异象轮盘 S4 · 引力之渊",
-                                   "updated":  "2026-08-05"
-                               }
-                  }
+  "slug": "codex",
+  "seoDescription": "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查。",
+  "section": "万物图鉴",
+  "description": "七日世界万物图鉴：皮毛、家具、异常物等收集类内容速查",
+  "items": [
+    {
+      "slug": "fur-bonuses",
+      "title": "皮毛增益图鉴",
+      "seoTitle": "七日世界皮毛增益图鉴：全皮类×6部位增益一览 - xingchuan",
+      "seoDescription": "七日世界皮毛增益图鉴：狼皮/熊皮/兔皮/鳄鱼皮/羊毛/牛皮/鹿皮/狐皮/羽绒等全部皮类在6个装备部位的增益效果完整一览。",
+      "summary": "共28种皮类×6部位增益效果，按动物类型分组（狼×3、熊×3、兔×4、鳄×4、羊×4、牛×4、鹿×2、狐×1、羽绒×1）。",
+      "updatedAt": "2026-08-08",
+      "status": "完整",
+      "sections": [
+        {
+          "heading": "狼类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
               ],
-    "seoTitle":  "七日世界万物图鉴 - xingchuan"
+              "rows": [
+                [
+                  "月兆狼皮",
+                  "弱点伤害减免+6%，生命值低于30%时翻倍",
+                  "最大耐力+15，腰射移动速度、开镜移动速度+5%，生命值低于30%时翻倍",
+                  "最大耐力+15，腰射移动速度、开镜移动速度+5%，生命值低于30%时翻倍",
+                  "月之低语产量+20%，生命值低于30%时翻倍",
+                  "移动速度+5%，生命值低于30%时翻倍",
+                  "弱点伤害+4%，生命值低于30%时额外增加8%"
+                ],
+                [
+                  "梦域狼皮",
+                  "弱点伤害减免+5%，在梦域中，效果翻倍",
+                  "最大耐力+15，在梦域中，效果翻倍",
+                  "最大耐力+15，在梦域中，效果翻倍",
+                  "在梦域中通过宰杀获取梦域毛皮时，有20%概率额外获得一个",
+                  "移动速度+4%，在梦域中，效果翻倍",
+                  "弱点伤害+3%，在梦域中，效果翻倍"
+                ],
+                [
+                  "荒原狼皮",
+                  "移动状态下，弱点伤害减免+7%",
+                  "最大耐力+20，冲刺速度+5%",
+                  "最大耐力+20，冲刺速度+5%",
+                  "禽肉、兔肉产量+15%",
+                  "移动速度+6%",
+                  "耐力大于90时弱点伤害+6%"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "熊类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "浮冰熊皮",
+                  "饱食度大于60时，免伤+4%",
+                  "寒冷抗性、霜冻抗性+15，10℃以下击败敌人恢复5%生命值",
+                  "寒冷抗性、霜冻抗性+15，10℃以下击败敌人恢复5%生命值",
+                  "鹿肉、牛肉、羊肉、猪肉产量+15%",
+                  "-10℃以下移动速度+15%",
+                  "饱食度为100时，冰霜元素伤害+8%"
+                ],
+                [
+                  "深穴熊皮",
+                  "受到伤害时，消耗10点饱食度恢复10%生命值（冷却30秒）",
+                  "寒冷抗性、霜冻抗性+10，寒冷状态下饱食度消耗速度减少25%",
+                  "寒冷抗性、霜冻抗性+10，寒冷状态下饱食度消耗速度减少25%",
+                  "鹿肉、牛肉、羊肉、猪肉产量+15%",
+                  "在任意领地内移动速度+20%",
+                  "蹲伏状态下，元素伤害+7%"
+                ],
+                [
+                  "雪原熊皮",
+                  "饱食度小于60时，最大生命值+800",
+                  "寒冷抗性、霜冻抗性+15，10℃以下翻滚速度+10%",
+                  "寒冷抗性、霜冻抗性+15，10℃以下翻滚速度+10%",
+                  "鹿肉、牛肉、羊肉、猪肉产量+15%",
+                  "10℃以下移动速度+12%",
+                  "饱食度小于60时，电离元素伤害+8%"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "兔类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "幸运兔皮",
+                  "翻滚状态下，异常伤害减免+10%",
+                  "寒冷抗性、霜冻抗性+10，非战斗状态下免伤+5%",
+                  "寒冷抗性、霜冻抗性+10，非战斗状态下免伤+5%",
+                  "药草种子产量+15%",
+                  "二段跳效果激活期间，跳跃高度+15%",
+                  "暴击后元素伤害+10%，持续3秒"
+                ],
+                [
+                  "月兆兔皮",
+                  "位于空中，免伤+7%，生命值低于30%时翻倍",
+                  "寒冷抗性、霜冻抗性、炎热抗性、燃烧抗性+5，生命值低于30%时翻倍",
+                  "寒冷抗性、霜冻抗性、炎热抗性、燃烧抗性+5，生命值低于30%时翻倍",
+                  "月之低语产量+20%，生命值低于30%时翻倍",
+                  "跳跃高度+8%，生命值低于30%时翻倍",
+                  "元素伤害+5%，生命值低于30%时翻倍"
+                ],
+                [
+                  "梦域兔皮",
+                  "位于空中，免伤+5%，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+5，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+5，在梦域中，效果翻倍",
+                  "采集清醒时钟获取的清醒之沙数量提高20%",
+                  "跳跃高度+8%，在梦域中，效果翻倍",
+                  "元素伤害+4%，在梦域中，效果翻倍"
+                ],
+                [
+                  "梦境兔皮",
+                  "翻越状态下，免伤+8%",
+                  "寒冷抗性、霜冻抗性+10，炎热抗性、燃烧抗性+5",
+                  "寒冷抗性、霜冻抗性+10，炎热抗性、燃烧抗性+5",
+                  "药草种子产量+15%",
+                  "跳跃高度+10%",
+                  "元素伤害+6%"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "鳄类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "巨鳄皮",
+                  "饮水度为100时，免伤+5%",
+                  "炎热抗性、燃烧抗性+15，濡湿状态下额外+10",
+                  "炎热抗性、燃烧抗性+15，濡湿状态下额外+10",
+                  "伐木、采矿最后一击产量+25%",
+                  "翻滚耐力消耗降低20%，濡湿状态下额外降低40%",
+                  "在水域战斗时，暴击伤害+10%"
+                ],
+                [
+                  "星临鳄皮",
+                  "饮水度为100时，免伤+5%，在空中时效果翻倍",
+                  "炎热抗性、燃烧抗性+15，在空中额外增加5",
+                  "炎热抗性、燃烧抗性+15，在空中额外增加5",
+                  "引力晶石产量+10%，在空中时翻倍",
+                  "翻滚速度+10%，翻滚耐力消耗降低2%",
+                  "近战伤害+10%，在空中时效果翻倍"
+                ],
+                [
+                  "沙滩鳄皮",
+                  "战斗状态下饮水度消耗提升30%，免伤+4%",
+                  "炎热抗性、燃烧抗性+15，濡湿时间+50%，濡湿期间免伤+5%",
+                  "炎热抗性、燃烧抗性+15，濡湿时间+50%，濡湿期间免伤+5%",
+                  "伐木、采矿最后一击产量+25%",
+                  "耐力大于80时翻滚速度+20%",
+                  "近战暴击率+7%"
+                ],
+                [
+                  "海湾鳄皮",
+                  "隐身状态下，免伤+10%",
+                  "炎热抗性、燃烧抗性+15，异常伤害减免+5%",
+                  "炎热抗性、燃烧抗性+15，异常伤害减免+5%",
+                  "伐木、采矿最后一击产量+25%",
+                  "翻滚速度+12%",
+                  "隐身状态下，暴击伤害+10%"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "羊类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "岩壁羊毛",
+                  "移动状态下，非弱点伤害减免+7%",
+                  "寒冷抗性、霜冻抗性+10，每有一个队友额外+3",
+                  "寒冷抗性、霜冻抗性+10，每有一个队友额外+3",
+                  "药草产量+15%",
+                  "攀爬速度+15%",
+                  "移动状态下，异常伤害+6%"
+                ],
+                [
+                  "月兆羊毛",
+                  "生命值每降低10%，免伤率+1%（上限7%）",
+                  "寒冷抗性、霜冻抗性+15，生命值低于30%时免疫失温症",
+                  "寒冷抗性、霜冻抗性+15，生命值低于30%时免疫失温症",
+                  "月之低语产量+20%，生命值低于30%时翻倍",
+                  "翻滚速度+8%，生命值低于30%时翻倍",
+                  "生命值每降低10%，异常伤害+1.5%（上限10.5%）"
+                ],
+                [
+                  "梦域羊毛",
+                  "非弱点伤害减免+5%，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+10，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+10，在梦域中，效果翻倍",
+                  "在梦域中采集星尘矿数量提高20%",
+                  "攀爬速度+10%，在梦域中，效果翻倍",
+                  "异常伤害+4%，在梦域中，效果翻倍"
+                ],
+                [
+                  "金羊毛",
+                  "免伤率每秒在+1~+10%波动",
+                  "寒冷抗性、霜冻抗性+20，炎热抗性、燃烧抗性-5",
+                  "寒冷抗性、霜冻抗性+20，炎热抗性、燃烧抗性-5",
+                  "金矿产量+20%，有极小概率获得金锭",
+                  "翻滚速度每秒在+10%~+25%波动",
+                  "枪械伤害与异常伤害总计增加12%，比例每秒发生变化"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "牛类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "星临牛皮",
+                  "暴击伤害减免+8%，在空中时效果翻倍",
+                  "负重上限+20，在空中耐力恢复速度增加5%",
+                  "负重上限+20，在空中耐力恢复速度增加5%",
+                  "引力晶石产量+10%，在空中时翻倍",
+                  "耐力上限+10，在空中耐力消耗降低5%",
+                  "耐力不低于120时，枪械伤害+8%，在空中时效果翻倍"
+                ],
+                [
+                  "梦域牛皮",
+                  "暴击伤害减免+7%，在梦域中，效果翻倍",
+                  "负重上限+20，在梦域中，效果翻倍",
+                  "负重上限+20，在梦域中，效果翻倍",
+                  "在极夜法则环境中获取噩梦光源时，有20%概率额外获得一个",
+                  "耐力上限+10，在梦域中，效果翻倍",
+                  "耐力不低于100时，枪械伤害+5%，在梦域中，效果翻倍"
+                ],
+                [
+                  "河谷牛皮",
+                  "受到暴击伤害后，恢复15%生命值（冷却30秒）",
+                  "炎热抗性、燃烧抗性+10，濡湿期间炎热抗性、燃烧抗性+5，负重上限+20",
+                  "炎热抗性、燃烧抗性+10，濡湿期间炎热抗性、燃烧抗性+5，负重上限+20",
+                  "谷物产量+15%",
+                  "耐力恢复速度提升20%",
+                  "耐力小于30时，恢复30点耐力（冷却30秒）"
+                ],
+                [
+                  "群山牛皮",
+                  "暴击伤害减免+10%",
+                  "寒冷抗性、霜冻抗性+15，负重上限+20",
+                  "寒冷抗性、霜冻抗性+15，负重上限+20",
+                  "谷物产量+15%",
+                  "耐力上限+15",
+                  "耐力不低于120时，枪械伤害+8%"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "鹿类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "月兆鹿皮",
+                  "冲刺状态下，免伤+4%，生命值低于30%时翻倍",
+                  "寒冷抗性、霜冻抗性+10，生命值低于30%时击败敌人获得5%护盾（冷却8秒）",
+                  "寒冷抗性、霜冻抗性+10，生命值低于30%时击败敌人获得5%护盾（冷却8秒）",
+                  "月之低语产量+20%，生命值低于30%时翻倍",
+                  "冲刺速度+7%，生命值低于30%时翻倍",
+                  "冲撞伤害+13%，生命值低于30%时翻倍"
+                ],
+                [
+                  "梦域鹿皮",
+                  "冲刺状态下，免伤+3%，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+5，在梦域中，效果翻倍",
+                  "寒冷抗性、霜冻抗性+5，在梦域中，效果翻倍",
+                  "采集海水，脏水时，有20%概率额外获得",
+                  "冲刺速度+6%，在梦域中，效果翻倍",
+                  "冲撞伤害+12%，在梦域中，效果翻倍"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "狐类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "星临狐皮",
+                  "非战斗状态下，免伤+10%，在空中时效果翻倍",
+                  "被敌人察觉速度降低15%，在空中击杀敌人恢复5点耐力",
+                  "被敌人察觉速度降低15%，在空中击杀敌人恢复5点耐力",
+                  "引力晶石产量+10%，在空中时翻倍",
+                  "蹲伏移动速度+16%，脱战状态下效果翻倍",
+                  "非战斗状态下，暴击率+10%，在空中时效果翻倍"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "羽绒类",
+          "blocks": [
+            {
+              "type": "table",
+              "cols": [
+                "皮类",
+                "头部",
+                "面罩",
+                "上衣",
+                "手套",
+                "下身",
+                "鞋子"
+              ],
+              "rows": [
+                [
+                  "星临羽绒",
+                  "污染抗性+15，在空中时效果翻倍",
+                  "寒冷抗性、霜冻抗性+15，在空中额外增加5",
+                  "寒冷抗性、霜冻抗性+15，在空中额外增加5",
+                  "引力晶石产量+10%，在空中时翻倍",
+                  "滑翔降落速度-5%，滑翔水平速度增加5%",
+                  "在空中时，异常伤害+15%"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seoDescription": "七日世界集市悬赏家具配方图鉴：44款家具配方展示，包含家具名称和图标。",
+      "slug": "furniture-recipes",
+      "seoTitle": "七日世界集市悬赏家具配方图鉴 - xingchuan",
+      "summary": "集市悬赏家具配方图鉴：44款家具配方展示",
+      "sections": [
+        {
+          "heading": "家具配方一览",
+          "blocks": [
+            {
+              "text": "集市悬赏家具配方图鉴，共44款家具配方：",
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                {
+                  "icon": "assets/furniture/furniture_1.png",
+                  "name": "铁丝网护栏"
+                },
+                {
+                  "icon": "assets/furniture/furniture_2.png",
+                  "name": "长条铝制吊灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_3.png",
+                  "name": "棱纹黑白地垫"
+                },
+                {
+                  "icon": "assets/furniture/furniture_4.png",
+                  "name": "一提饮品"
+                },
+                {
+                  "icon": "assets/furniture/furniture_5.png",
+                  "name": "橙色地垫"
+                },
+                {
+                  "icon": "assets/furniture/furniture_6.png",
+                  "name": "镶边矮木桌"
+                },
+                {
+                  "icon": "assets/furniture/furniture_7.png",
+                  "name": "蓝色折叠椅"
+                },
+                {
+                  "icon": "assets/furniture/furniture_8.png",
+                  "name": "木框碎花静物画"
+                },
+                {
+                  "icon": "assets/furniture/furniture_9.png",
+                  "name": "铁艺壁挂框"
+                },
+                {
+                  "icon": "assets/furniture/furniture_10.png",
+                  "name": "办公矮柜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_11.png",
+                  "name": "金缕圆茶几"
+                },
+                {
+                  "icon": "assets/furniture/furniture_12.png",
+                  "name": "简约灰椅"
+                },
+                {
+                  "icon": "assets/furniture/furniture_13.png",
+                  "name": "矮款开放柜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_14.png",
+                  "name": "双层储纳车"
+                },
+                {
+                  "icon": "assets/furniture/furniture_15.png",
+                  "name": "原木高低花架"
+                },
+                {
+                  "icon": "assets/furniture/furniture_16.png",
+                  "name": "简易洗手台"
+                },
+                {
+                  "icon": "assets/furniture/furniture_17.png",
+                  "name": "弯管台灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_18.png",
+                  "name": "古铜圆镜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_19.png",
+                  "name": "黄铜弯线吊灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_20.png",
+                  "name": "藤编包边圆镜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_21.png",
+                  "name": "联排布艺沙发"
+                },
+                {
+                  "icon": "assets/furniture/furniture_22.png",
+                  "name": "素木储物柜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_23.png",
+                  "name": "深栗实木斗柜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_24.png",
+                  "name": "虎皮兰盆栽"
+                },
+                {
+                  "icon": "assets/furniture/furniture_25.png",
+                  "name": "原木多层置物架"
+                },
+                {
+                  "icon": "assets/furniture/furniture_26.png",
+                  "name": "铜盆室内绿植"
+                },
+                {
+                  "icon": "assets/furniture/furniture_27.png",
+                  "name": "蜂巢错落架"
+                },
+                {
+                  "icon": "assets/furniture/furniture_28.png",
+                  "name": "红釉曲臂灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_29.png",
+                  "name": "奶黄扶手椅"
+                },
+                {
+                  "icon": "assets/furniture/furniture_30.png",
+                  "name": "双层简易茶几"
+                },
+                {
+                  "icon": "assets/furniture/furniture_31.png",
+                  "name": "立式画框·一型"
+                },
+                {
+                  "icon": "assets/furniture/furniture_32.png",
+                  "name": "机械闹铃"
+                },
+                {
+                  "icon": "assets/furniture/furniture_33.png",
+                  "name": "金属报刊架"
+                },
+                {
+                  "icon": "assets/furniture/furniture_34.png",
+                  "name": "倒挂杯影灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_35.png",
+                  "name": "石质垃圾桶"
+                },
+                {
+                  "icon": "assets/furniture/furniture_36.png",
+                  "name": "红垫木靠背椅"
+                },
+                {
+                  "icon": "assets/furniture/furniture_37.png",
+                  "name": "红色壁灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_38.png",
+                  "name": "整齐的一排书"
+                },
+                {
+                  "icon": "assets/furniture/furniture_39.png",
+                  "name": "欧式典雅挂画"
+                },
+                {
+                  "icon": "assets/furniture/furniture_40.png",
+                  "name": "立式饮水机"
+                },
+                {
+                  "icon": "assets/furniture/furniture_41.png",
+                  "name": "户外工程探照灯"
+                },
+                {
+                  "icon": "assets/furniture/furniture_42.png",
+                  "name": "纯白方茶几"
+                },
+                {
+                  "icon": "assets/furniture/furniture_43.png",
+                  "name": "四格壁挂木柜"
+                },
+                {
+                  "icon": "assets/furniture/furniture_44.png",
+                  "name": "双格木茶几"
+                }
+              ],
+              "type": "furniture-grid"
+            }
+          ]
+        }
+      ],
+      "name": "家具配方：集市悬赏",
+      "updatedAt": "2026-08-05",
+      "status": "完整",
+      "title": "集市悬赏家具配方图鉴",
+      "info": {
+        "season": "异象轮盘 S4 · 引力之渊",
+        "updated": "2026-08-05"
+      }
+    }
+  ],
+  "seoTitle": "七日世界万物图鉴 - xingchuan"
 }

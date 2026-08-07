@@ -12,11 +12,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const modsPageScript = readFileSync(join(__dirname, '..', 'scripts', 'mods-page.js'), 'utf8');
 
 /** 页面外壳：关注条 + 头部 + main + 页脚。guideSlug 非空时头部高亮「攻略大全」而非栏目。 */
-function shell(site, games, currentSlug, inner, guideSlug = '') {
+function shell(site, games, currentSlug, inner, guideSlug = '', mainClass = '') {
+  const mainCls = mainClass ? ` class="${mainClass}"` : '';
   return [
     followBar(site),
     siteHeader(site, games, currentSlug, guideSlug),
-    `<main>\n${inner}\n</main>`,
+    `<main${mainCls}>\n${inner}\n</main>`,
     siteFooter(site),
     backToTop(),
   ].join('\n');
@@ -28,7 +29,7 @@ function latinName(fullName) {
   return m ? m[0].trim() : '';
 }
 
-/** 详情页右侧本页目录（桌面 ≥1024px 显示，移动端隐藏）。items: [{ no, heading }]，锚点 #sec-<no>。 */
+/** 详情页本页目录：顶部横排折叠。items: [{ no, heading }]，锚点 #sec-<no>。 */
 function tocNav(items) {
   const lis = items
     .map(
@@ -36,7 +37,7 @@ function tocNav(items) {
         `  <li><a href="#sec-${it.no}"><span class="toc__no" aria-hidden="true">§${it.no}</span>${escapeHtml(it.heading)}</a></li>`
     )
     .join('\n');
-  return `<nav class="toc" aria-label="本页目录">\n  ${microLabel('ON THIS PAGE')}\n  <ul class="toc__list">\n${lis}\n  </ul>\n</nav>`;
+  return `<nav class="toc" aria-label="本页目录" onclick="this.classList.toggle('is-open')">\n  <span class="toc__toggle">ON THIS PAGE</span>\n  <span class="toc__arrow" aria-hidden="true">▶</span>\n  <ul class="toc__list">\n${lis}\n  </ul>\n</nav>`;
 }
 
 /** 首页 = 游戏导航页：超大品牌 hero + 游戏栏目入口大块 + 热门攻略索引。 */
@@ -302,7 +303,15 @@ export function renderBuildDetail({ site, games, game, build, canonical }) {
   <figcaption class="micro-label">BUILD INFOGRAPHIC / 配装一图流 · 点击查看原图</figcaption>
 </figure>`
     : '';
+  const tocHtml = tocNav([
+    { no: 1, heading: '适用场景' },
+    { no: 2, heading: '武器/装备列表' },
+    { no: 3, heading: '模组/词条建议' },
+    { no: 4, heading: '材料需求' },
+    { no: 5, heading: '配装思路' },
+  ]);
   const inner = `<div class="detail-layout">
+${tocHtml}
 <article>
 ${crumb(`/${game.slug}/builds/`, `${game.name}配装推荐`)}
 <h1>${escapeHtml(game.name)}${escapeHtml(build.title)}</h1>
@@ -341,13 +350,6 @@ ${secH(5, '配装思路')}
 ${paras}
 ${vids('s5')}
 </article>
-${tocNav([
-  { no: 1, heading: '适用场景' },
-  { no: 2, heading: '武器/装备列表' },
-  { no: 3, heading: '模组/词条建议' },
-  { no: 4, heading: '材料需求' },
-  { no: 5, heading: '配装思路' },
-])}
 </div>`;
 
   const jsonLd = {
@@ -384,7 +386,7 @@ ${tocNav([
  *   { "type": "table", "cols": [...], "rows": [[...], ...] }     表格（移动端横向滚动）
  *   { "type": "note", "text": "..." }                            提示条（醒目免责声明等）
  */
-export function renderGuideDetail({ site, games, game, section, item, canonical }) {
+export function renderGuideDetail({ site, games, game, section, item, canonical, mainClass = '' }) {
   const secH = (no, text) =>
     `<h2 class="sec-h" id="sec-${no}"><span class="sec-h__no" aria-hidden="true">§${no}</span>${escapeHtml(text)}</h2>`;
 
@@ -415,6 +417,24 @@ ${rows}
     </div>`).join('\n');
       return `<div class="furniture-grid">\n${cards}\n</div>`;
     }
+    if (b.type === 'fur-cards') {
+      const SCENARIO_BADGE = { '月兆': '月之预兆', '星临': '逆轨星临', '梦域': '无尽长梦' };
+      const cards = (b.items || []).filter(f => !f.hidden).map((f) => {
+        const iconImg = f.icon ? `<img class="fur-card__icon" src="/${escapeHtml(f.icon)}" alt="${escapeHtml(f.animal)}" loading="lazy">` : '';
+        const badge = f.scenario ? `<span class="fur-card__badge fur-card__badge--${f.scenario}">${escapeHtml(SCENARIO_BADGE[f.scenario] || f.scenario)}</span>` : '';
+        const effectRows = ['头','面罩','上衣','下身','手套','鞋子'].map(slot =>
+          `<tr><td class="fur-card__part">${escapeHtml(slot)}</td><td>${escapeHtml(f.effects[slot] || '—')}</td></tr>`
+        ).join('\n');
+        return `<div class="fur-card">
+  <div class="fur-card__head">
+    ${iconImg}
+    <span class="fur-card__name">${escapeHtml(f.name)}</span>${badge}
+  </div>
+  <table class="fur-card__effect-table"><tbody>${effectRows}</tbody></table>
+</div>`;
+      }).join('\n');
+      return `<div class="fur-grid">\n${cards}\n</div>`;
+    }
     if (b.type === 'note') {
       return `<p class="note">${microLabel('NOTE')}<span>${escapeHtml(b.text)}</span></p>`;
     }
@@ -431,7 +451,9 @@ ${rows}
     metaTag(`BY ${site.name.toUpperCase()}`),
   ].join('');
 
+  const tocHtml = tocNav((item.sections || []).map((s, i) => ({ no: i + 1, heading: s.heading })));
   const inner = `<div class="detail-layout">
+${tocHtml}
 <article>
 ${crumb(`/${game.slug}/${section.slug}/`, `${game.name}${section.section}`)}
 <h1>${escapeHtml(game.name)}${escapeHtml(item.title)}</h1>
@@ -439,8 +461,8 @@ ${crumb(`/${game.slug}/${section.slug}/`, `${game.name}${section.section}`)}
 ${infoCard(item.info)}
 ${secs}
 </article>
-${tocNav((item.sections || []).map((s, i) => ({ no: i + 1, heading: s.heading })))}
 </div>`;
+  // TOC moved above via inner placement
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -460,7 +482,7 @@ ${tocNav((item.sections || []).map((s, i) => ({ no: i + 1, heading: s.heading })
     title: item.seoTitle,
     description: item.seoDescription,
     canonical,
-    content: shell(site, games, game.slug, inner),
+    content: shell(site, games, game.slug, inner, '', mainClass),
     ogTitle: `${game.name}${item.title}`,
     ogDescription: item.seoDescription,
     jsonLd,

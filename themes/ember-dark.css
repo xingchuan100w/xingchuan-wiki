@@ -553,6 +553,32 @@ main {
 .text-list li { margin: 6px 0; }
 .text-list li::marker { color: var(--accent); }
 
+/* ---------- 全宽表格（打破 main 860px 限制） ---------- */
+.main--wide main,
+main.main--wide {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.main--wide .table-wrap {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: 100vw;
+  border-left: none;
+  border-right: none;
+}
+@media (min-width: 768px) {
+  .main--wide main,
+  main.main--wide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main--wide .table-wrap {
+    margin-left: calc(50% - 50vw + 20px);
+    margin-right: calc(50% - 50vw + 20px);
+  }
+}
+
 /* ---------- 表格（移动端横向滚动） ---------- */
 .table-wrap {
   margin: 12px 0;
@@ -1111,45 +1137,66 @@ tbody tr:last-child td { border-bottom: none; }
 }
 .cover__caption { z-index: 1; }
 
-/* ---------- 详情页两栏：文章 + 桌面端右侧本页目录（≥1024px） ---------- */
+/* ---------- 详情页本页目录：顶部横排折叠 ---------- */
 html { scroll-behavior: smooth; }
-.sec-h { scroll-margin-top: 112px; } /* 锚点定位避开顶部固定条 */
+.sec-h { scroll-margin-top: 112px; }
 
 .detail-layout { display: block; }
-.toc { display: none; }
 
-@media (min-width: 1024px) {
-  .detail-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 232px;
-    gap: 48px;
-    align-items: start;
-  }
-  .toc {
-    display: block;
-    position: sticky;
-    top: 76px;
-    padding: 4px 0 8px 16px;
-    border-left: 1px solid var(--line);
-  }
-  .toc__list {
-    list-style: none;
-    margin-top: 10px;
-  }
-  .toc__list a {
-    display: block;
-    padding: 7px 0;
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--dim);
-    transition: color .15s ease;
-  }
-  .toc__list a:hover { color: var(--accent); }
-  .toc__no {
-    color: var(--accent);
-    font-weight: 700;
-    margin-right: 8px;
-  }
+/* 目录折叠栏 */
+.toc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  margin: 0 0 16px;
+  background: var(--raised);
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.toc:hover { background: rgba(201, 102, 46, .08); }
+.toc__toggle {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: .1em;
+  white-space: nowrap;
+}
+.toc__arrow {
+  font-size: 10px;
+  color: var(--dim);
+  transition: transform .2s;
+}
+.toc.is-open .toc__arrow { transform: rotate(90deg); }
+.toc__list {
+  list-style: none;
+  display: none;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 8px 0 0;
+  width: 100%;
+  border-top: 1px solid var(--line-soft);
+}
+.toc.is-open .toc__list { display: flex; }
+.toc__list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  font-size: 13px;
+  color: var(--dim);
+  white-space: nowrap;
+  transition: color .15s;
+}
+.toc__list a:hover { color: var(--accent); }
+.toc__no {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 11px;
 }
 /* ---------- 模组图鉴（/once-human/mods/） ---------- */
 
@@ -2171,4 +2218,179 @@ html { scroll-behavior: smooth; }
   margin-top: 8px; padding-top: 6px;
   border-top: 1px solid rgba(212, 165, 67, .35);
   color: #f5cf5e; font-size: 11px; font-weight: 600;
+}
+
+/* ================================================================
+   金色皮毛效果图鉴 · 卡片式布局
+   ================================================================ */
+
+/* ---------- 动物分组标题 ---------- */
+.fur-section-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--accent-strong);
+  margin: 28px 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+  letter-spacing: .04em;
+}
+
+/* ---------- 卡片网格容器 ---------- */
+.fur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+/* ---------- 单张皮毛卡片 ---------- */
+.fur-card {
+  background: linear-gradient(160deg, var(--raised) 0%, rgba(20, 18, 16, .95) 100%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color .2s, box-shadow .2s;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.fur-card__effect-table {
+  flex: 1;
+}
+.fur-card:hover {
+  border-color: rgba(201, 102, 46, .35);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .35);
+}
+
+/* ---------- 卡片头部：图标 + 名称 + 徽章 ---------- */
+.fur-card__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.fur-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+  object-fit: contain;
+  padding: 2px;
+}
+
+/* ---------- 皮毛名称 ---------- */
+.fur-card__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  color: var(--text);
+}
+
+/* ---------- 剧本徽章（月兆 / 星临 / 梦域） ---------- */
+.fur-card__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+/* 月之预兆 — 紫调 */
+.fur-card__badge--月兆 {
+  background: rgba(100, 80, 160, .25);
+  color: #c9b8ff;
+}
+/* 逆轨星临 — 青调 */
+.fur-card__badge--星临 {
+  background: rgba(30, 90, 120, .3);
+  color: #9fe3ff;
+}
+/* 无尽长梦 — 粉调 */
+.fur-card__badge--梦域 {
+  background: rgba(120, 40, 90, .3);
+  color: #ffb8e6;
+}
+
+/* ---------- 效果表格 ---------- */
+.fur-card__effect-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+.fur-card__effect-table td {
+  padding: 5px 6px;
+  font-size: 12.5px;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: middle;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 0;
+  width: 100%;
+}
+.fur-card__effect-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- 部位标签（头/口罩/上衣/下身/手套/鞋子） ---------- */
+.fur-card__part {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 12px;
+  width: 65px;
+  min-width: 65px;
+  white-space: nowrap;
+}
+
+/* ---------- 效果描述中的提示文字 ---------- */
+.fur-card__note {
+  color: #ff8b8b;
+}
+
+/* ---------- 页面说明文字（图鉴底部统计） ---------- */
+.fur-page-sub {
+  text-align: center;
+  color: var(--dim);
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+.fur-legend {
+  text-align: center;
+  margin: 10px auto 26px;
+  font-size: 12px;
+  color: var(--dim);
+}
+.fur-legend b {
+  color: var(--accent-strong);
+}
+
+/* ---------- 移动端适配 ---------- */
+@media (max-width: 740px) {
+  .fur-grid {
+    grid-template-columns: 1fr;
+  }
+  .fur-section-title {
+    font-size: 19px;
+  }
+  .fur-card__head {
+    gap: 10px;
+  }
+  .fur-card__icon {
+    width: 44px;
+    height: 44px;
+  }
+  .fur-card__name {
+    font-size: 15px;
+  }
+}
+
+/* ---------- 全宽模式下让卡片网格也能适当扩展 ---------- */
+.main--wide .fur-grid {
+  max-width: 100%;
 }

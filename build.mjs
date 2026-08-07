@@ -288,7 +288,8 @@ for (const game of games) {
   for (const item of d.codex.items) {
     if (item.slug && Array.isArray(item.sections)) {
       const url = `${base}/codex/${item.slug}/`;
-      addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url) }));
+      const mainClass = item.slug === 'fur-bonuses' ? 'main--wide' : '';
+      addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url), mainClass }));
     }
   }
   // 剧情
