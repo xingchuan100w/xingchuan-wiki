@@ -56,6 +56,8 @@ const gameData = {
     changelog: readJson('once-human/changelog.json'),
     codex: readJson('once-human/codex.json'),
     mods: readJson('once-human/mods.json'),
+    guns: readJson('once-human/guns.json'),
+    armor: readJson('once-human/armor.json'),
     exploration: readJson('once-human/exploration.json'),
     growth: readJson('once-human/growth.json'),
     story: readJson('once-human/story.json'),
@@ -295,6 +297,9 @@ for (const game of games) {
   addPage(`${base}/exploration/`, renderMaterialsList({ site, games, game, data: d.exploration, canonical: canonicalOf(`${base}/exploration/`) }));
   // 角色成长
   addPage(`${base}/growth/`, renderMaterialsList({ site, games, game, data: d.growth, canonical: canonicalOf(`${base}/growth/`) }));
+  // 武器图鉴 / 防具图鉴（占位页）
+  addPage(`${base}/builds/guns/`, renderBuildsList({ site, games, game, data: d.guns, canonical: canonicalOf(`${base}/builds/guns/`) }));
+  addPage(`${base}/builds/armor/`, renderBuildsList({ site, games, game, data: d.armor, canonical: canonicalOf(`${base}/builds/armor/`) }));
   // 模组图鉴（101 模组 / 849 后缀变体；纯列表页 + JS 交互，无详情页）
   addPage(`${base}/mods/`, renderModsList({ site, games, game, data: d.mods, canonical: canonicalOf(`${base}/mods/`) }));
 }

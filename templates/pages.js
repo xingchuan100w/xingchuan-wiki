@@ -235,10 +235,25 @@ export function renderBuildsList({ site, games, game, data, canonical }) {
     })
     .join('\n');
 
+  const quickLinks = [
+    { label: '武器图鉴', desc: '全武器属性、适用流派一览', href: `/${game.slug}/builds/guns/` },
+    { label: '防具图鉴', desc: '全防具属性、套装效果速查', href: `/${game.slug}/builds/armor/` },
+    { label: '模组图鉴', desc: '100 模组、809 变体词条数值', href: `/${game.slug}/mods/` },
+  ].map((q) => `    <a class="quick-links__item" href="${q.href}">
+      <span class="quick-links__name">${escapeHtml(q.label)}</span>
+      <span class="quick-links__desc">${escapeHtml(q.desc)}</span>
+    </a>`).join('\n');
+
   const inner = `${crumb(`/${game.slug}/`, `${game.name}专区`)}
 <p class="meta-row">${metaTag('SECTION')}${metaTag(data.section)}</p>
 <h1>${escapeHtml(game.name)}${escapeHtml(data.section)}</h1>
 <p class="lede">${escapeHtml(data.description)}</p>
+<section class="quick-links">
+  ${microLabel('QUICK ACCESS')}
+  <div class="quick-links__grid">
+${quickLinks}
+  </div>
+</section>
 <ul class="section-list">
 ${lis}
 </ul>`;
