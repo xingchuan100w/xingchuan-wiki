@@ -56,6 +56,8 @@ const gameData = {
     changelog: readJson('once-human/changelog.json'),
     codex: readJson('once-human/codex.json'),
     mods: readJson('once-human/mods.json'),
+    exploration: readJson('once-human/exploration.json'),
+    growth: readJson('once-human/growth.json'),
   },
 };
 
@@ -184,8 +186,11 @@ function guideSectionsOf(game) {
   const base = `/${game.slug}`;
   return [
     { kind: 'builds', data: d.builds, en: 'BUILDS' },
-    { kind: 'materials', data: d.materials, en: 'MATERIALS' },
     { kind: 'mechanics', data: d.mechanics, en: 'MECHANICS' },
+    { kind: 'materials', data: d.exploration, en: 'EXPLORATION' },
+    { kind: 'materials', data: d.codex, en: 'CODEX' },
+    { kind: 'materials', data: d.materials, en: 'MATERIALS' },
+    { kind: 'materials', data: d.growth, en: 'GROWTH' },
     { kind: 'updates', data: d.changelog, en: 'CHANGELOG' },
     { kind: 'mods', data: d.mods, en: 'MODS' },
   ].map(({ kind, data, en }) => ({
@@ -201,9 +206,11 @@ function sectionsOf(game) {
   const d = gameData[game.slug];
   return [
     { kind: 'builds', data: d.builds },
-    { kind: 'materials', data: d.materials },
-    { kind: 'materials', data: d.codex },
     { kind: 'mechanics', data: d.mechanics },
+    { kind: 'materials', data: d.exploration },
+    { kind: 'materials', data: d.codex },
+    { kind: 'materials', data: d.materials },
+    { kind: 'materials', data: d.growth },
     { kind: 'updates', data: d.changelog },
     { kind: 'mods', data: d.mods },
   ].map(({ kind, data }) => ({
@@ -281,6 +288,10 @@ for (const game of games) {
       addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url) }));
     }
   }
+  // 探索收集
+  addPage(`${base}/exploration/`, renderMaterialsList({ site, games, game, data: d.exploration, canonical: canonicalOf(`${base}/exploration/`) }));
+  // 角色成长
+  addPage(`${base}/growth/`, renderMaterialsList({ site, games, game, data: d.growth, canonical: canonicalOf(`${base}/growth/`) }));
   // 模组图鉴（101 模组 / 849 后缀变体；纯列表页 + JS 交互，无详情页）
   addPage(`${base}/mods/`, renderModsList({ site, games, game, data: d.mods, canonical: canonicalOf(`${base}/mods/`) }));
 }
