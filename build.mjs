@@ -194,7 +194,6 @@ function guideSectionsOf(game) {
     { kind: 'materials', data: d.materials, en: 'MATERIALS' },
     { kind: 'materials', data: d.growth, en: 'GROWTH' },
     { kind: 'updates', data: d.changelog, en: 'CHANGELOG' },
-    { kind: 'mods', data: d.mods, en: 'MODS' },
   ].map(({ kind, data, en }) => ({
     title: data.section,
     en,
@@ -215,7 +214,6 @@ function sectionsOf(game) {
     { kind: 'materials', data: d.materials },
     { kind: 'materials', data: d.growth },
     { kind: 'updates', data: d.changelog },
-    { kind: 'mods', data: d.mods },
   ].map(({ kind, data }) => ({
     kind,
     data,
