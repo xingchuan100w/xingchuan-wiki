@@ -49,7 +49,9 @@ for (const [k, v] of Object.entries(framesLib)) {
     }
   }
 }
-const sharedEntryIds = new Set(Object.keys(entryFrameCount).filter(id => entryFrameCount[id] > 1));
+// 仅对"超级共享"条目降级（被10+ frame引用，且游戏内始终用最低tier）
+// 7405=对所有怪物伤害(33帧), 5101=生命(10帧)
+const sharedEntryIds = new Set([7405, 5101]);
 // 官方图标目录索引（icon_path → 本地文件名）
 const officialFiles = new Set(readdirSync(OFFICIAL_ICONS));
 const iconResolve = (iconPath) => {
@@ -215,24 +217,24 @@ for (const p of Object.values(propsRaw)) {
         }
         // 第6个tier重复第5个（L16-17=L13-15）
         allDescVals.push(allDescVals[4] ? allDescVals[4].map(x => x) : []);
-        // 共享条目调整：游戏内 tier 映射与专属条目不同（共享条目 L7-12 用较低 tier）
+        // 共享条目调整：游戏内 tier 映射与专属条目不同
+        // 共享 attr 条目：L4-17 统一用 tier2 值
         if (sharedEntryIds.has(subId)) {
-          // 共享 attr 条目：L7-12 用 tier2 值
           if (allDescVals[1]) {
-            allDescVals[2] = allDescVals[1].map(x => x);
+            for (let i = 2; i <= 5; i++) allDescVals[i] = allDescVals[1].map(x => x);
           }
         }
-        stats.push({ name: eName, desc: rawDesc || eName, values: attrVals, descValues: allDescVals });
+        stats.push({ name: eName, desc: rawDesc || eName, values: attrVals, descValues: allDescVals, descIsPercent: false });
       } else if (e?.buff_id) {
         // 固定效果词条：从 buff_level_data 取每级真实数值
         const bv = getBuffValues(e.buff_id);
         const dv = bv.descValues || [];
-        // 共享条目调整：游戏内 tier 映射与专属条目不同（共享条目 L7-12 用较低 tier）
+        // 共享条目调整：游戏内 tier 映射与专属条目不同
+        // 共享 buff 条目：L4-17 统一用 lv2 值（除最后 tier 保留 lv5）
         if (sharedEntryIds.has(subId) && dv.length >= 6 && dv[1]) {
-          // 共享 buff 条目：L7-12 用 lv2 值（descValues[2]=[3]），L13+ 保持原值
-          dv[2] = dv[1].map(x => x);
+          for (let i = 2; i <= 4; i++) dv[i] = dv[1].map(x => x);
         }
-        stats.push({ name: eName, desc: bv.desc || eName, values: bv.values.length ? bv.values : [], descValues: dv });
+        stats.push({ name: eName, desc: bv.desc || eName, values: bv.values.length ? bv.values : [], descValues: dv, descIsPercent: true });
       } else {
         stats.push({ name: eName, desc: eName, values: [] });
       }

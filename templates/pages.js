@@ -613,7 +613,7 @@ export function renderModsList({ site, games, game, data, canonical }) {
       isShiny: v.isShiny, shinyDesc: v.shinyDesc || '',
       genreLib: v.genreLib, genreName: v.genreName,
       applySlot: v.applySlot, applyRange: v.applyRange,
-      stats: v.stats.map(function(s) { return { name: s.name, desc: s.desc || s.name, values: s.values, descValues: s.descValues || [] }; }),
+      stats: v.stats.map(function(s) { return { name: s.name, desc: s.desc || s.name, values: s.values, descValues: s.descValues || [], descIsPercent: s.descIsPercent }; }),
     })),
   })));
 
@@ -691,14 +691,27 @@ export function renderModsList({ site, games, game, data, canonical }) {
 
   var ITEMS = (function(){ try { return JSON.parse(document.getElementById('mods-data').textContent); } catch(e) { return []; } })();
 
-  function levelToTier(lv){
+  // 共享条目ID列表（需要降级tier映射）
+  var SHARED_BUFF_IDS = [7405]; // 对所有怪物伤害
+  var SHARED_ATTR_IDS = [5101]; // 生命
+  
+  function levelToTier(lv, entryId){
     lv = parseInt(lv) || 17;
-    if (lv <= 3) return 0;
-    if (lv <= 6) return 1;
-    if (lv <= 9) return 2;
-    if (lv <= 12) return 3;
-    if (lv <= 15) return 3;
-    return 4;
+    var base;
+    if (lv <= 3) base = 0;
+    else if (lv <= 6) base = 1;
+    else if (lv <= 9) base = 2;
+    else if (lv <= 12) base = 3;
+    else if (lv <= 15) base = 3;
+    else base = 4;
+    
+    // 共享 attr 条目：始终用 index 1
+    if (entryId && SHARED_ATTR_IDS.indexOf(entryId) >= 0) return 1;
+    // 共享 buff 条目：L13-15 降2级
+    if (entryId && SHARED_BUFF_IDS.indexOf(entryId) >= 0) {
+      if (lv >= 13 && lv <= 15) return Math.max(base - 2, 0);
+    }
+    return base;
   }
 
   function fmt(v){
@@ -745,18 +758,20 @@ export function renderModsList({ site, games, game, data, canonical }) {
     h += '<div class="mod-detail__stats">';
     for (var i = 0; i < (v.stats || []).length; i++) {
       var st = v.stats[i];
-      var val = (st.values && st.values.length > 0) ? st.values[tier] : null;
+      var val = (st.levelValues && st.levelValues.length >= level) ? st.levelValues[level - 1] :
+                (st.values && st.values.length > 0) ? st.values[tier] : null;
       var valStr = (val !== null && val !== undefined) ? fmt(val) : '固定';
       var label = st.desc || st.name;
-      // 用 descValues[tier] 替换所有 {N} 占位符
-      var tierVals = (st.descValues && st.descValues.length > tier) ? st.descValues[tier] : null;
+      // 优先用 levelValues（按游戏等级直接查表），回退到 descValues[tier]
+      var tierVals = (st.levelValues && st.levelValues.length >= level) ? st.levelValues[level - 1] : 
+                     (st.descValues && st.descValues.length > tier) ? st.descValues[tier] : null;
       label = label.replace(/\{(\d)\}/g, function(_, n) {
         var idx = parseInt(n) - 1;
         if (tierVals && tierVals.length > idx && tierVals[idx] != null) {
           if (tierVals && tierVals.length > idx && tierVals[idx] != null) {
             var v = parseFloat(tierVals[idx]);
-            // buff 条目的 descValues 已是百分比(>1)，attr 条目是小数(<1)需×100
-            return v > 1 ? v.toFixed(1) : (v * 100).toFixed(1);
+            // descIsPercent=true: buff 条目值已是百分比；false: attr 条目值是小数需×100
+            return st.descIsPercent ? v.toFixed(1) : (v * 100).toFixed(1);
           }
         // 回退到 values 数组
         if (st.values && st.values.length > tier && st.values[tier] != null && idx === 0) {
