@@ -58,6 +58,7 @@ const gameData = {
     mods: readJson('once-human/mods.json'),
     exploration: readJson('once-human/exploration.json'),
     growth: readJson('once-human/growth.json'),
+    story: readJson('once-human/story.json'),
   },
 };
 
@@ -187,6 +188,7 @@ function guideSectionsOf(game) {
   return [
     { kind: 'builds', data: d.builds, en: 'BUILDS' },
     { kind: 'mechanics', data: d.mechanics, en: 'MECHANICS' },
+    { kind: 'materials', data: d.story, en: 'STORY' },
     { kind: 'materials', data: d.exploration, en: 'EXPLORATION' },
     { kind: 'materials', data: d.codex, en: 'CODEX' },
     { kind: 'materials', data: d.materials, en: 'MATERIALS' },
@@ -207,6 +209,7 @@ function sectionsOf(game) {
   return [
     { kind: 'builds', data: d.builds },
     { kind: 'mechanics', data: d.mechanics },
+    { kind: 'materials', data: d.story },
     { kind: 'materials', data: d.exploration },
     { kind: 'materials', data: d.codex },
     { kind: 'materials', data: d.materials },
@@ -288,6 +291,8 @@ for (const game of games) {
       addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url) }));
     }
   }
+  // 剧情
+  addPage(`${base}/story/`, renderMaterialsList({ site, games, game, data: d.story, canonical: canonicalOf(`${base}/story/`) }));
   // 探索收集
   addPage(`${base}/exploration/`, renderMaterialsList({ site, games, game, data: d.exploration, canonical: canonicalOf(`${base}/exploration/`) }));
   // 角色成长
