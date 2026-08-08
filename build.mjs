@@ -27,6 +27,7 @@ import {
   renderMechanicsList,
   renderUpdatesList,
   renderModsList,
+  renderTechRecipesList,
 } from './templates/pages.js';
 
 // 部署时替换为真实域名（当前为占位域名，仅用于 canonical / sitemap / robots）
@@ -61,6 +62,7 @@ const gameData = {
     exploration: readJson('once-human/exploration.json'),
     growth: readJson('once-human/growth.json'),
     story: readJson('once-human/story.json'),
+    techRecipes: readJson('once-human/tech-recipes.json'),
   },
 };
 
@@ -140,10 +142,13 @@ function sectionIndex(game, kind, data) {
         };
       case 'materials': {
         const hasDetail = item.slug && Array.isArray(item.sections);
+        // 科技发明配方：从 materials 数组生成摘要
+        const summary = item.summary || item.route
+          || (Array.isArray(item.materials) ? item.materials.join('、') : '');
         return {
-          title: item.name,
-          tags: [item.location, item.respawn],
-          summary: item.summary || item.route,
+          title: item.name || item.title,
+          tags: [item.location, item.respawn, item.category, !item.universal && item.scenario].filter(Boolean),
+          summary,
           href: hasDetail ? `${base}/${data.slug}/${item.slug}/` : `${base}/${data.slug}/`,
         };
       }
@@ -290,6 +295,14 @@ for (const game of games) {
       const url = `${base}/codex/${item.slug}/`;
       const mainClass = item.slug === 'fur-bonuses' ? 'main--wide' : '';
       addPage(url, renderGuideDetail({ site, games, game, section: d.codex, item, canonical: canonicalOf(url), mainClass }));
+    }
+  }
+  // 科技发明图鉴
+  addPage(`${base}/materials/tech-recipes/`, renderTechRecipesList({ site, games, game, data: d.techRecipes, canonical: canonicalOf(`${base}/materials/tech-recipes/`) }));
+  for (const item of d.techRecipes.items) {
+    if (item.slug && Array.isArray(item.sections)) {
+      const url = `${base}/tech-recipes/${item.slug}/`;
+      addPage(url, renderGuideDetail({ site, games, game, section: d.techRecipes, item, canonical: canonicalOf(url) }));
     }
   }
   // 剧情

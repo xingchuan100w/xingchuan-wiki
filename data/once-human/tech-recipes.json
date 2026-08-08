@@ -1,0 +1,6500 @@
+{
+  "slug": "tech-recipes",
+  "seoDescription": "七日世界科技发明配方图鉴：全部科技研究台发明配方、材料、剧本归属速查。",
+  "section": "科技发明图鉴",
+  "description": "七日世界科技发明配方图鉴：科技研究台发明配方、材料、剧本归属速查（已隐藏海岛·海域/禁忌岛专属配方）",
+  "items": [
+    {
+      "id": 95350805,
+      "name": "科技研究台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        },
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_tech_study_machine.png",
+      "slug": "recipe-95350805"
+    },
+    {
+      "id": 95310131,
+      "name": "初级灶台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×35 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        },
+        {
+          "text": "×20 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_cooking_range_lv1.png",
+      "slug": "recipe-95310131",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×35 铜矿",
+            "×20 碎石",
+            "×30 原木"
+          ]
+        },
+        {
+          "label": "旧版通用",
+          "materials": [
+            "×25 铜矿",
+            "×20 碎石",
+            "×30 木炭",
+            "×10 金属废料"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×35 铜矿",
+            "×10 碎石",
+            "×30 原木",
+            "×3 贝壳"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61310135,
+      "name": "保鲜型灶台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 烤箱手套",
+          "name": "烤箱手套",
+          "icon": "icon_mitten_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/cooking_range_a.png",
+      "slug": "recipe-61310135"
+    },
+    {
+      "id": 95310101,
+      "name": "初级工艺台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×20 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_artisan_bench_lv1.png",
+      "slug": "recipe-95310101"
+    },
+    {
+      "id": 61310106,
+      "name": "药品工艺台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×1 多功能螺丝套组",
+          "name": "多功能螺丝套组",
+          "icon": "icon_screwdriver_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/artisan_bench_b.png",
+      "slug": "recipe-61310106"
+    },
+    {
+      "id": 95340201,
+      "name": "武器陈列架",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×5 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_display_firearm.png",
+      "slug": "recipe-95340201"
+    },
+    {
+      "id": 95350308,
+      "name": "储水桶",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×5 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_newbucket.png",
+      "slug": "recipe-95350308"
+    },
+    {
+      "id": 95330102,
+      "name": "大型生物电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 二极管",
+          "name": "二极管",
+          "icon": "icon_detective_device.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_15_electric_new.png",
+      "slug": "recipe-95330102"
+    },
+    {
+      "id": 95520103,
+      "name": "桌子",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×3 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_table.png",
+      "slug": "recipe-95520103"
+    },
+    {
+      "id": 95350204,
+      "name": "堆肥箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×10 烧结砖",
+          "name": "烧结砖",
+          "icon": "icon_brick_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_compostor.png",
+      "slug": "recipe-95350204"
+    },
+    {
+      "id": 95350124,
+      "name": "晒肉架",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_meatdryingrack.png",
+      "slug": "recipe-95350124"
+    },
+    {
+      "id": 95350301,
+      "name": "集雨器",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×15 破旧织物",
+          "name": "破旧织物",
+          "icon": "icon_fabric_lv1_new.png"
+        },
+        {
+          "text": "×5 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_raincollector.png",
+      "slug": "recipe-95350301",
+      "variants": [
+        {
+          "label": "旧版通用",
+          "materials": [
+            "×30 原木",
+            "×15 破旧织物",
+            "×5 橡胶"
+          ]
+        },
+        {
+          "label": "全剧本通用",
+          "materials": [
+            "×30 原木",
+            "×15 织物",
+            "×5 橡胶"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 95350602,
+      "name": "测试假人",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×1 衣架",
+          "name": "衣架",
+          "icon": "icon_clotheshanger.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_test_target.png",
+      "slug": "recipe-95350602"
+    },
+    {
+      "id": 61310162,
+      "name": "电子拆解台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×1 钢丝钳",
+          "name": "钢丝钳",
+          "icon": "icon_gongjuqian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/recycling_station_a.png",
+      "slug": "recipe-61310162"
+    },
+    {
+      "id": 61330111,
+      "name": "改良大型水力电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×80 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×75 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×8 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        },
+        {
+          "text": "×1 特制线缆",
+          "name": "特制线缆",
+          "icon": "icon_tin_foil_tape_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/hydroturbine02_a.png",
+      "slug": "recipe-61330111",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×80 钨锭",
+            "×180 银矿",
+            "×30 零件",
+            "×75 原木",
+            "×8 保险丝",
+            "×1 特制线缆"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×80 钨锭",
+            "×2 珍珠",
+            "×30 零件",
+            "×75 原木",
+            "×8 保险丝",
+            "×1 特制线缆"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 95350401,
+      "name": "收容舱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_containment_unit_03.png",
+      "slug": "recipe-95350401"
+    },
+    {
+      "id": 95510113,
+      "name": "绿色照明筒灯",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_downlight_green.png",
+      "slug": "recipe-95510113"
+    },
+    {
+      "id": 95560161,
+      "name": "小相框·一型",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_m_photoframe_01.png",
+      "slug": "recipe-95560161"
+    },
+    {
+      "id": 95330104,
+      "name": "大型光能电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×10 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 二极管",
+          "name": "二极管",
+          "icon": "icon_detective_device.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_13_electric_new.png",
+      "slug": "recipe-95330104"
+    },
+    {
+      "id": 95310181,
+      "name": "设计台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×45 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×15 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_research_station_lv1.png",
+      "slug": "recipe-95310181"
+    },
+    {
+      "id": 95330101,
+      "name": "小型生物电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×3 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_15_electric_new.png",
+      "slug": "recipe-95330101"
+    },
+    {
+      "id": 95350302,
+      "name": "抽水泵",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×35 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/pumpingdevice_dirtywater.png",
+      "slug": "recipe-95350302"
+    },
+    {
+      "id": 95320132,
+      "name": "2级火焰陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 便携混合燃油",
+          "name": "便携混合燃油",
+          "icon": "icon_bottled_oil_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_landmine.png",
+      "slug": "recipe-95320132"
+    },
+    {
+      "id": 95310133,
+      "name": "高级灶台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_cooking_range_lv3.png",
+      "slug": "recipe-95310133"
+    },
+    {
+      "id": 95350303,
+      "name": "大型净水器",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×10 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_waterpurifier.png",
+      "slug": "recipe-95350303"
+    },
+    {
+      "id": 95350802,
+      "name": "伐木平台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×4 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×10 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_feller.png",
+      "slug": "recipe-95350802"
+    },
+    {
+      "id": 95340106,
+      "name": "冰箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_refrigerator_new.png",
+      "slug": "recipe-95340106"
+    },
+    {
+      "id": 95320131,
+      "name": "1级火焰陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 便携混合燃油",
+          "name": "便携混合燃油",
+          "icon": "icon_bottled_oil_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_landmine.png",
+      "slug": "recipe-95320131"
+    },
+    {
+      "id": 95330103,
+      "name": "小型光能电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×80 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×3 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_14_electric_new.png",
+      "slug": "recipe-95330103"
+    },
+    {
+      "id": 95350107,
+      "name": "星尘转换器",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×20 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×20 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×10 酸液",
+          "name": "酸液",
+          "icon": "icon_acid.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_dust_collection.png",
+      "slug": "recipe-95350107"
+    },
+    {
+      "id": 95350305,
+      "name": "发酵桶",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×20 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×20 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×20 铝锭",
+          "name": "铝锭",
+          "icon": "icon_aluminum_alloy_new.png"
+        },
+        {
+          "text": "×15 酸液",
+          "name": "酸液",
+          "icon": "icon_acid.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_barrel.png",
+      "slug": "recipe-95350305",
+      "variants": [
+        {
+          "label": "旧版通用",
+          "materials": [
+            "×50 原木",
+            "×20 粘合剂",
+            "×20 橡胶",
+            "×20 铝锭",
+            "×15 酸液"
+          ]
+        },
+        {
+          "label": "全剧本通用",
+          "materials": [
+            "×50 原木",
+            "×20 粘合剂",
+            "×20 橡胶",
+            "×30 钢锭",
+            "×15 酸液",
+            "×1 电源线"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61310145,
+      "name": "回收型电炉",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×75 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 焊机",
+          "name": "焊机",
+          "icon": "icon_weld_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/furnace_c.png",
+      "slug": "recipe-61310145",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×75 钨锭",
+            "×75 金矿",
+            "×5 电子元件",
+            "×5 零件",
+            "×1 焊机",
+            "×1 电源线"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×75 钨锭",
+            "×2 珍珠",
+            "×5 电子元件",
+            "×5 零件",
+            "×1 焊机",
+            "×1 电源线"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61310143,
+      "name": "混合动力电炉",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×75 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 焊机",
+          "name": "焊机",
+          "icon": "icon_weld_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/furnace_a.png",
+      "slug": "recipe-61310143"
+    },
+    {
+      "id": 95350110,
+      "name": "植物生长灯",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×2 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_growlights.png",
+      "slug": "recipe-95350110"
+    },
+    {
+      "id": 95340401,
+      "name": "仓储终端",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_storage_x_02.png",
+      "slug": "recipe-95340401"
+    },
+    {
+      "id": 95350501,
+      "name": "畜牧槽",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×12 烧结砖",
+          "name": "烧结砖",
+          "icon": "icon_brick_new.png"
+        },
+        {
+          "text": "×25 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_water_channel.png",
+      "slug": "recipe-95350501"
+    },
+    {
+      "id": 95340103,
+      "name": "武器存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×15 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_7_electric_new.png",
+      "slug": "recipe-95340103"
+    },
+    {
+      "id": 95350402,
+      "name": "融合舱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×3 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_fusion_facility.png",
+      "slug": "recipe-95350402"
+    },
+    {
+      "id": 95330107,
+      "name": "小型水力电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×100 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_hydroturbine01.png",
+      "slug": "recipe-95330107"
+    },
+    {
+      "id": 95320126,
+      "name": "2级步枪",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×200 中口径钢芯弹",
+          "name": "中口径钢芯弹",
+          "icon": "icon_bullet_rilfe_new.png"
+        },
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×8 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rifle_turret_lv3.png",
+      "slug": "recipe-95320126"
+    },
+    {
+      "id": 95310175,
+      "name": "中型车库",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×38 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_hive_garage_new.png",
+      "slug": "recipe-95310175"
+    },
+    {
+      "id": 95560144,
+      "name": "鱼缸",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×60 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×20 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×5 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×10 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_fish_tank.png",
+      "slug": "recipe-95560144"
+    },
+    {
+      "id": 61310105,
+      "name": "弹药工艺台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×1 多功能螺丝套组",
+          "name": "多功能螺丝套组",
+          "icon": "icon_screwdriver_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/artisan_bench_a.png",
+      "slug": "recipe-61310105"
+    },
+    {
+      "id": 95350205,
+      "name": "栽培土壤",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×8 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        },
+        {
+          "text": "×3 变质的料理",
+          "name": "变质的料理",
+          "icon": "icon_spoiledfood_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_dirt.png",
+      "slug": "recipe-95350205"
+    },
+    {
+      "id": 95550162,
+      "name": "电暖器",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×2 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×5 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×5 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×2 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_heater.png",
+      "slug": "recipe-95550162"
+    },
+    {
+      "id": 95320125,
+      "name": "1级步枪",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×200 中口径铜弹",
+          "name": "中口径铜弹",
+          "icon": "icon_bullet_rilfe_new.png"
+        },
+        {
+          "text": "×30 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×8 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rifle_turret_lv2.png",
+      "slug": "recipe-95320125"
+    },
+    {
+      "id": 95310113,
+      "name": "高级装备台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×68 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×12 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_armbench_lv3.png",
+      "slug": "recipe-95310113",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×68 钢锭",
+            "×30 零件",
+            "×12 塑料",
+            "×30 电子元件"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×40 铜矿",
+            "×2 金属废料",
+            "×2 粘合剂"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61330114,
+      "name": "改良异常能电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×100 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×40 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×100 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×8 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        },
+        {
+          "text": "×1 特制线缆",
+          "name": "特制线缆",
+          "icon": "icon_tin_foil_tape_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/energy_converte_a.png",
+      "slug": "recipe-61330114"
+    },
+    {
+      "id": 61330112,
+      "name": "改良大型光能电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        },
+        {
+          "text": "×1 特制线缆",
+          "name": "特制线缆",
+          "icon": "icon_tin_foil_tape_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/solar_generator_a.png",
+      "slug": "recipe-61330112"
+    },
+    {
+      "id": 98100001,
+      "name": "小号花盆",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×15 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×15 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        },
+        {
+          "text": "×5 变质的料理",
+          "name": "变质的料理",
+          "icon": "icon_spoiledfood_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_flowerpot_small.png",
+      "slug": "recipe-98100001"
+    },
+    {
+      "id": 95350109,
+      "name": "灌溉装置",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_autowater.png",
+      "slug": "recipe-95350109"
+    },
+    {
+      "id": 95320136,
+      "name": "3级减速陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×25 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_zl0612.png",
+      "slug": "recipe-95320136"
+    },
+    {
+      "id": 61310137,
+      "name": "星尘融合灶台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 烤箱手套",
+          "name": "烤箱手套",
+          "icon": "icon_mitten_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/cooking_range_c.png",
+      "slug": "recipe-61310137"
+    },
+    {
+      "id": 95320103,
+      "name": "沙袋",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×3 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bunker_sandbag01.png",
+      "slug": "recipe-95320103"
+    },
+    {
+      "id": 95320133,
+      "name": "3级火焰陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×30 便携混合燃油",
+          "name": "便携混合燃油",
+          "icon": "icon_bottled_oil_new.png"
+        },
+        {
+          "text": "×20 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×25 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_landmine.png",
+      "slug": "recipe-95320133"
+    },
+    {
+      "id": 95340101,
+      "name": "小型存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_wood_storage_box.png",
+      "slug": "recipe-95340101"
+    },
+    {
+      "id": 95550161,
+      "name": "冷风机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×2 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×5 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×5 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×2 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_cooler.png",
+      "slug": "recipe-95550161"
+    },
+    {
+      "id": 95350801,
+      "name": "采矿平台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×4 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_mining_drill.png",
+      "slug": "recipe-95350801"
+    },
+    {
+      "id": 95320123,
+      "name": "2级霰弹枪",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 霰弹枪钢芯弹",
+          "name": "霰弹枪钢芯弹",
+          "icon": "icon_bullet_shotgun_new.png"
+        },
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×8 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rifle_shotgun_turret_lv3.png",
+      "slug": "recipe-95320123"
+    },
+    {
+      "id": 95320128,
+      "name": "宁静帷幔",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×120 星尘锭",
+          "name": "星尘锭",
+          "icon": "icon_starchrom_metal.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×40 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_veil_tranq.png",
+      "slug": "recipe-95320128"
+    },
+    {
+      "id": 95530103,
+      "name": "椅子",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×2 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_diningchair.png",
+      "slug": "recipe-95530103"
+    },
+    {
+      "id": 98100002,
+      "name": "中号花盆",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×80 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×20 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×20 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        },
+        {
+          "text": "×8 变质的料理",
+          "name": "变质的料理",
+          "icon": "icon_spoiledfood_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_flowerpot_medium.png",
+      "slug": "recipe-98100002"
+    },
+    {
+      "id": 95320142,
+      "name": "2级炮台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×45 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 桶装优质燃油",
+          "name": "桶装优质燃油",
+          "icon": "icon_barrelled_oil_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_turret_grenade01.png",
+      "slug": "recipe-95320142"
+    },
+    {
+      "id": 95550156,
+      "name": "标本架",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×5 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_billboard.png",
+      "slug": "recipe-95550156"
+    },
+    {
+      "id": 61310163,
+      "name": "精细拆解台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×1 钢丝钳",
+          "name": "钢丝钳",
+          "icon": "icon_gongjuqian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/recycling_station_b.png",
+      "slug": "recipe-61310163"
+    },
+    {
+      "id": 95310161,
+      "name": "拆解台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×20 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_biochemical_lab.png",
+      "slug": "recipe-95310161"
+    },
+    {
+      "id": 95810104,
+      "name": "温控塔",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×75 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×30 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_controltower_new.png",
+      "slug": "recipe-95810104"
+    },
+    {
+      "id": 61310107,
+      "name": "道具工艺台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×1 多功能螺丝套组",
+          "name": "多功能螺丝套组",
+          "icon": "icon_screwdriver_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_artisan_bench_lv3.png",
+      "slug": "recipe-61310107"
+    },
+    {
+      "id": 95320122,
+      "name": "1级霰弹枪",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 霰弹枪铜弹",
+          "name": "霰弹枪铜弹",
+          "icon": "icon_bullet_shotgun_new.png"
+        },
+        {
+          "text": "×30 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×8 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rifle_shotgun_turret_lv2.png",
+      "slug": "recipe-95320122"
+    },
+    {
+      "id": 95310141,
+      "name": "熔炉",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        },
+        {
+          "text": "×30 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_furnace_lv1.png",
+      "slug": "recipe-95310141"
+    },
+    {
+      "id": 95310142,
+      "name": "电炉",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×35 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_furnace_lv2.png",
+      "slug": "recipe-95310142",
+      "variants": [
+        {
+          "label": "旧版通用",
+          "materials": [
+            "×35 钢锭",
+            "×15 铜锭",
+            "×5 电子元件",
+            "×10 零件"
+          ]
+        },
+        {
+          "label": "全剧本通用",
+          "materials": [
+            "×50 钢锭",
+            "×20 铜锭",
+            "×5 电子元件",
+            "×10 零件",
+            "×1 电源线"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 95510109,
+      "name": "红色照明筒灯",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_downlight_red.png",
+      "slug": "recipe-95510109"
+    },
+    {
+      "id": 95340108,
+      "name": "异常物存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/deviation_box.png",
+      "slug": "recipe-95340108"
+    },
+    {
+      "id": 61310144,
+      "name": "星尘动力电炉",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×75 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 焊机",
+          "name": "焊机",
+          "icon": "icon_weld_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/furnace_b.png",
+      "slug": "recipe-61310144"
+    },
+    {
+      "id": 94000106,
+      "name": "双人飞行器",
+      "category": "载具",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_flywing_new.png",
+      "slug": "recipe-94000106"
+    },
+    {
+      "id": 95320137,
+      "name": "1级地刺陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×10 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_v_spike.png",
+      "slug": "recipe-95320137"
+    },
+    {
+      "id": 95350502,
+      "name": "幼崽小屋",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×12 烧结砖",
+          "name": "烧结砖",
+          "icon": "icon_brick_new.png"
+        },
+        {
+          "text": "×30 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/animal_babyroom.png",
+      "slug": "recipe-95350502"
+    },
+    {
+      "id": 95560151,
+      "name": "大相框·一型",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_g_photoframe_01.png",
+      "slug": "recipe-95560151"
+    },
+    {
+      "id": 61330113,
+      "name": "改良大型生物电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        },
+        {
+          "text": "×1 特制线缆",
+          "name": "特制线缆",
+          "icon": "icon_tin_foil_tape_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/biology_conversion_a.png",
+      "slug": "recipe-61330113"
+    },
+    {
+      "id": 95510114,
+      "name": "蓝色照明筒灯",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_downlight_blue.png",
+      "slug": "recipe-95510114"
+    },
+    {
+      "id": 95340102,
+      "name": "大型存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_large_storage_crate.png",
+      "slug": "recipe-95340102"
+    },
+    {
+      "id": 95350803,
+      "name": "星尘采矿平台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×60 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×80 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×20 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×4 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_mining_drill.png",
+      "slug": "recipe-95350803"
+    },
+    {
+      "id": 95320138,
+      "name": "2级地刺陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_v_spike.png",
+      "slug": "recipe-95320138"
+    },
+    {
+      "id": 98100003,
+      "name": "大号花盆",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×100 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×30 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×30 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        },
+        {
+          "text": "×10 变质的料理",
+          "name": "变质的料理",
+          "icon": "icon_spoiledfood_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_flowerpot_large.png",
+      "slug": "recipe-98100003"
+    },
+    {
+      "id": 95310202,
+      "name": "大型炼油设施",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×40 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_refiner.png",
+      "slug": "recipe-95310202"
+    },
+    {
+      "id": 61310164,
+      "name": "特制拆解台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×75 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×1 钢丝钳",
+          "name": "钢丝钳",
+          "icon": "icon_gongjuqian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/recycling_station_c.png",
+      "slug": "recipe-61310164"
+    },
+    {
+      "id": 95320105,
+      "name": "掩体02",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×6 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×4 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bunker_h_lv1.png",
+      "slug": "recipe-95320105"
+    },
+    {
+      "id": 95510102,
+      "name": "日光灯管",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×3 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×2 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_ceilinglight.png",
+      "slug": "recipe-95510102"
+    },
+    {
+      "id": 95320139,
+      "name": "3级地刺陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×20 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_v_spike.png",
+      "slug": "recipe-95320139"
+    },
+    {
+      "id": 95330109,
+      "name": "异常能电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×40 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×40 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×100 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×1 二极管",
+          "name": "二极管",
+          "icon": "icon_detective_device.png"
+        },
+        {
+          "text": "×8 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_energy_converte.png",
+      "slug": "recipe-95330109"
+    },
+    {
+      "id": 61310136,
+      "name": "钢制集成灶台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×180 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 烤箱手套",
+          "name": "烤箱手套",
+          "icon": "icon_mitten_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/cooking_range_b.png",
+      "slug": "recipe-61310136"
+    },
+    {
+      "id": 95310103,
+      "name": "高级工艺台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_artisan_bench_lv3.png",
+      "slug": "recipe-95310103"
+    },
+    {
+      "id": 95340104,
+      "name": "防具存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×15 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_build_6_electric_new.png",
+      "slug": "recipe-95340104"
+    },
+    {
+      "id": 95310201,
+      "name": "小型炼油设施",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×35 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_refiner.png",
+      "slug": "recipe-95310201"
+    },
+    {
+      "id": 95320141,
+      "name": "1级炮台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×45 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×10 桶装优质燃油",
+          "name": "桶装优质燃油",
+          "icon": "icon_barrelled_oil_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_turret_grenade01.png",
+      "slug": "recipe-95320141"
+    },
+    {
+      "id": 95350102,
+      "name": "邮箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 铁矿",
+          "name": "铁矿",
+          "icon": "icon_iron_ore_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_mailbox_new.png",
+      "slug": "recipe-95350102"
+    },
+    {
+      "id": 95340105,
+      "name": "私人存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rosetta_storage_box_1.png",
+      "slug": "recipe-95340105"
+    },
+    {
+      "id": 95310171,
+      "name": "小型车库",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×13 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_cheku_new.png",
+      "slug": "recipe-95310171"
+    },
+    {
+      "id": 95350201,
+      "name": "种植箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×15 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        },
+        {
+          "text": "×15 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        },
+        {
+          "text": "×3 变质的料理",
+          "name": "变质的料理",
+          "icon": "icon_spoiledfood_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_plantbox.png",
+      "slug": "recipe-95350201"
+    },
+    {
+      "id": 95350125,
+      "name": "太阳能贩卖机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×45 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×30 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×10 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×5 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_trade_vending_machine.png",
+      "slug": "recipe-95350125"
+    },
+    {
+      "id": 95320134,
+      "name": "1级减速陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×15 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_zl0612.png",
+      "slug": "recipe-95320134"
+    },
+    {
+      "id": 95320135,
+      "name": "2级减速陷阱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_zl0612.png",
+      "slug": "recipe-95320135"
+    },
+    {
+      "id": 95810105,
+      "name": "个人温控塔",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×60 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×30 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_controltower_new.png",
+      "slug": "recipe-95810105"
+    },
+    {
+      "id": 95550103,
+      "name": "收音机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×4 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×3 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×2 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_self_radio.png",
+      "slug": "recipe-95550103"
+    },
+    {
+      "id": 95320104,
+      "name": "掩体01",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×3 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bunker_l_lv1.png",
+      "slug": "recipe-95320104"
+    },
+    {
+      "id": 95350310,
+      "name": "星尘精炼装置",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×45 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×50 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×20 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×40 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/pumpingdevice_stardust.png",
+      "slug": "recipe-95350310"
+    },
+    {
+      "id": 95350104,
+      "name": "贩卖机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×8 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×3 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×3 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_vending_machine_new.png",
+      "slug": "recipe-95350104"
+    },
+    {
+      "id": 95540101,
+      "name": "床",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×3 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bed_new.png",
+      "slug": "recipe-95540101"
+    },
+    {
+      "id": 95350309,
+      "name": "小型净水器",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×20 木炭",
+          "name": "木炭",
+          "icon": "icon_coal_new.png"
+        },
+        {
+          "text": "×25 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_miniwaterpurifier.png",
+      "slug": "recipe-95350309"
+    },
+    {
+      "id": 95340107,
+      "name": "特制存储箱",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×5 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_large_storage_crate.png",
+      "slug": "recipe-95340107"
+    },
+    {
+      "id": 95310174,
+      "name": "大型车库",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×30 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×40 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×5 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_hive_garage_new.png",
+      "slug": "recipe-95310174"
+    },
+    {
+      "id": 95330108,
+      "name": "大型水力电机",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×30 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×30 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×1 二极管",
+          "name": "二极管",
+          "icon": "icon_detective_device.png"
+        },
+        {
+          "text": "×8 保险丝",
+          "name": "保险丝",
+          "icon": "icon_fuse_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_hydroturbine02.png",
+      "slug": "recipe-95330108"
+    },
+    {
+      "id": 95560155,
+      "name": "中相框·一型",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×1 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_l_photoframe_01.png",
+      "slug": "recipe-95560155"
+    },
+    {
+      "id": 95350804,
+      "name": "幸运伐木平台",
+      "category": "设施",
+      "tab": "主制造台（设施·武器·陷阱·电机·存储·装饰）",
+      "tab_id": "0",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×60 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×80 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×15 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×1 电源线",
+          "name": "电源线",
+          "icon": "icon_dianyuanxian_new.png"
+        },
+        {
+          "text": "×20 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×4 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_feller.png",
+      "slug": "recipe-95350804"
+    },
+    {
+      "id": 30153021,
+      "name": "改良型侦察无人机",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×200 中口径穿甲弹",
+          "name": "中口径穿甲弹",
+          "icon": "icon_bullet_rilfe_3_new.png"
+        },
+        {
+          "text": "×10 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×5 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×30 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_changgui_01_new.png",
+      "slug": "recipe-30153021"
+    },
+    {
+      "id": 30153999,
+      "name": "护罩矩阵",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 控制单元",
+          "name": "控制单元",
+          "icon": "icon_control_unit_01.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×40 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×5 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_rareskill_shield_matrix.png",
+      "slug": "recipe-30153999"
+    },
+    {
+      "id": 30152120,
+      "name": "破片手雷",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×8 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×3 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×1 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        },
+        {
+          "text": "×5 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_stun_lp_new_408.png",
+      "slug": "recipe-30152120"
+    },
+    {
+      "id": 30154999,
+      "name": "蓝焰喷火器",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 桶装优质燃油",
+          "name": "桶装优质燃油",
+          "icon": "icon_barrelled_oil_new.png"
+        },
+        {
+          "text": "×50 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×20 星尘锭",
+          "name": "星尘锭",
+          "icon": "icon_starchrom_metal.png"
+        },
+        {
+          "text": "×30 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_rareskill_bluefire.png",
+      "slug": "recipe-30154999"
+    },
+    {
+      "id": 30152281,
+      "name": "便携空调",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×8 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "雪国人生/无尽长梦/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_xgrs_37.png",
+      "slug": "recipe-30152281"
+    },
+    {
+      "id": 30153030,
+      "name": "便携式机枪塔",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×200 中口径钢芯弹",
+          "name": "中口径钢芯弹",
+          "icon": "icon_bullet_rilfe_new.png"
+        },
+        {
+          "text": "×5 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×3 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_changgui_03_new.png",
+      "slug": "recipe-30153030"
+    },
+    {
+      "id": 30152280,
+      "name": "便携取暖器",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×15 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×8 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "雪国人生/无尽长梦/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_xgrs_36.png",
+      "slug": "recipe-30152280"
+    },
+    {
+      "id": 30154998,
+      "name": "Mr.Wish火箭筒",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 桶装优质燃油",
+          "name": "桶装优质燃油",
+          "icon": "icon_barrelled_oil_new.png"
+        },
+        {
+          "text": "×1 发射器",
+          "name": "发射器",
+          "icon": "icon_launcher_01_new.png"
+        },
+        {
+          "text": "×60 星尘锭",
+          "name": "星尘锭",
+          "icon": "icon_starchrom_metal.png"
+        },
+        {
+          "text": "×25 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        },
+        {
+          "text": "×40 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_rareskill_boom.png",
+      "slug": "recipe-30154998"
+    },
+    {
+      "id": 30152020,
+      "name": "燃烧瓶",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×6 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×4 硫磺",
+          "name": "硫磺",
+          "icon": "icon_sulfur_ore_new.png"
+        },
+        {
+          "text": "×2 凉白开",
+          "name": "凉白开",
+          "icon": "icon_boiling_water_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_molotov_coctail_new.png",
+      "slug": "recipe-30152020"
+    },
+    {
+      "id": 30153000,
+      "name": "阔剑地雷",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×3 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×1 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        },
+        {
+          "text": "×2 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×2 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_directional_mine_new.png",
+      "slug": "recipe-30153000"
+    },
+    {
+      "id": 30152000,
+      "name": "手雷",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×8 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×3 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×3 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×1 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_grenade.png",
+      "slug": "recipe-30152000"
+    },
+    {
+      "id": 30130152,
+      "name": "光谱帷幔",
+      "category": "消耗品",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】电子元件",
+          "name": "【任选】电子元件",
+          "icon": ""
+        },
+        {
+          "text": "×60 银矿",
+          "name": "银矿",
+          "icon": "icon_sliver_ore_new.png"
+        },
+        {
+          "text": "×25 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_rabizex_new.png",
+      "slug": "recipe-30130152"
+    },
+    {
+      "id": 30152012,
+      "name": "高爆炸药",
+      "category": "战术道具",
+      "tab": "进阶研究台",
+      "tab_id": "1004",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×3 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        },
+        {
+          "text": "×10 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×2 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_explosive_new.png",
+      "slug": "recipe-30152012"
+    },
+    {
+      "id": 30160011,
+      "name": "复合型强化肥料",
+      "category": "素材",
+      "tab": "耕种台",
+      "tab_id": "1005",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】变异蘑菇",
+          "name": "【任选】变异蘑菇",
+          "icon": ""
+        },
+        {
+          "text": "×10 肥料",
+          "name": "肥料",
+          "icon": "icon_fertilizer_primary.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_fertilizer_advanced.png",
+      "slug": "recipe-30160011"
+    },
+    {
+      "id": 30009006,
+      "name": "采集镰刀",
+      "category": "工具",
+      "tab": "耕种台",
+      "tab_id": "1005",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】铁锭",
+          "name": "【任选】铁锭",
+          "icon": ""
+        },
+        {
+          "text": "×3 生皮",
+          "name": "生皮",
+          "icon": "icon_leather_lv1_new.png"
+        },
+        {
+          "text": "×10 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_spider_leg_new.png",
+      "slug": "recipe-30009006"
+    },
+    {
+      "id": 31000121,
+      "name": "凿岩电钻",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×20 织物",
+          "name": "织物",
+          "icon": "icon_fabric_lv2_new.png"
+        },
+        {
+          "text": "【任选】荒原狼皮 等38种任选",
+          "name": "【任选】荒原狼皮 等38种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_electric_drill_lv1_new.png",
+      "slug": "recipe-31000121",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×50 合金钢锭",
+            "×20 零件",
+            "×20 电子元件",
+            "×1 蓄电池",
+            "×20 织物",
+            "【任选】荒原狼皮 等38种任选"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×50 合金钢锭",
+            "×20 零件",
+            "×20 电子元件",
+            "×1 蓄电池",
+            "×20 织物",
+            "【任选】梦境兔皮 等39种任选"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30100125,
+      "name": "鱼竿",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_fishing_rog_02.png",
+      "slug": "recipe-30100125",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×20 原木",
+            "×10 铁锭"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×20 原木",
+            "×10 铜矿"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31000101,
+      "name": "粗制斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_temporary_axe_new.png",
+      "slug": "recipe-31000101",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "×5 原木",
+            "×10 碎石"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "×5 原木",
+            "【任选】贝壳 / 碎石"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31000128,
+      "name": "太阳能电钻",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】银矿 / 钨锭 / 金矿",
+          "name": "【任选】银矿 / 钨锭 / 金矿",
+          "icon": ""
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×60 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "【任选】梦境兔皮 等39种任选",
+          "name": "【任选】梦境兔皮 等39种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_electric_drill_lv2_new.png",
+      "slug": "recipe-31000128",
+      "variants": [
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "【任选】银矿 / 钨锭 / 金矿",
+            "×20 零件",
+            "×20 电子元件",
+            "×1 蓄电池",
+            "×60 星尘源质",
+            "【任选】梦境兔皮 等39种任选"
+          ]
+        },
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "【任选】银矿 / 钨锭 / 金矿",
+            "×20 零件",
+            "×20 电子元件",
+            "×1 蓄电池",
+            "×60 星尘源质",
+            "【任选】荒原狼皮 等38种任选"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30009007,
+      "name": "拓展背包",
+      "category": "生存装置",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】金矿 / 银矿 / 钨锭",
+          "name": "【任选】金矿 / 银矿 / 钨锭",
+          "icon": ""
+        },
+        {
+          "text": "×5 生皮",
+          "name": "生皮",
+          "icon": "icon_leather_lv1_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_jiufangdanyi_new.png",
+      "slug": "recipe-30009007"
+    },
+    {
+      "id": 30009003,
+      "name": "随身冰箱",
+      "category": "生存装置",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】铜锭 / 金矿 / 银矿",
+          "name": "【任选】铜锭 / 金矿 / 银矿",
+          "icon": ""
+        },
+        {
+          "text": "×6 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×20 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_pumpingdevice.png",
+      "slug": "recipe-30009003"
+    },
+    {
+      "id": 30000102,
+      "name": "铜斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×7 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "【任选】雪原熊皮 等28种任选",
+          "name": "【任选】雪原熊皮 等28种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_copper_axe_new.png",
+      "slug": "recipe-30000102"
+    },
+    {
+      "id": 30000105,
+      "name": "合金斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 铝锭",
+          "name": "铝锭",
+          "icon": "icon_aluminum_alloy_new.png"
+        },
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "【任选】雪原熊皮 等28种任选",
+          "name": "【任选】雪原熊皮 等28种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_alloy_axe_new.png",
+      "slug": "recipe-30000105"
+    },
+    {
+      "id": 30000124,
+      "name": "高级伐木电锯",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×35 自动化零件",
+          "name": "自动化零件",
+          "icon": "icon_part_material_5_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×35 特制塑料",
+          "name": "特制塑料",
+          "icon": "icon_plastic_lv5_new.png"
+        },
+        {
+          "text": "×3 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_electric_saw_lv2.png",
+      "slug": "recipe-30000124"
+    },
+    {
+      "id": 30000121,
+      "name": "凿岩电钻",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×35 铝锭",
+          "name": "铝锭",
+          "icon": "icon_aluminum_alloy_new.png"
+        },
+        {
+          "text": "×20 特制零件",
+          "name": "特制零件",
+          "icon": "icon_part_material_4_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×20 金属纤维织物",
+          "name": "金属纤维织物",
+          "icon": "icon_junyonghechengzhiwu_new.png"
+        },
+        {
+          "text": "×1 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_electric_drill_lv1_new.png",
+      "slug": "recipe-30000121"
+    },
+    {
+      "id": 30009009,
+      "name": "电子设备收集器",
+      "category": "生存装置",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】金矿 / 银矿 / 铜矿",
+          "name": "【任选】金矿 / 银矿 / 铜矿",
+          "icon": ""
+        },
+        {
+          "text": "×10 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×5 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_treasure_detector_lv2_new.png",
+      "slug": "recipe-30009009"
+    },
+    {
+      "id": 30000180,
+      "name": "回收工具",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×2 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×20 铜矿",
+          "name": "铜矿",
+          "icon": "icon_copper_ore_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_wrench_new_02.png",
+      "slug": "recipe-30000180"
+    },
+    {
+      "id": 30000101,
+      "name": "粗制斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_temporary_axe_new.png",
+      "slug": "recipe-30000101"
+    },
+    {
+      "id": 30152180,
+      "name": "麻醉飞针",
+      "category": "战术道具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×3 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "×1 神经毒素",
+          "name": "神经毒素",
+          "icon": "icon_neurotoxin_new.png"
+        },
+        {
+          "text": "×3 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_mazuifeizhen_new.png",
+      "slug": "recipe-30152180"
+    },
+    {
+      "id": 30009011,
+      "name": "移动集雨器",
+      "category": "生存装置",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】银矿 / 织物 / 金矿",
+          "name": "【任选】银矿 / 织物 / 金矿",
+          "icon": ""
+        },
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 粘合剂",
+          "name": "粘合剂",
+          "icon": "icon_adhesive_active.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_raincollector.png",
+      "slug": "recipe-30009011"
+    },
+    {
+      "id": 30000104,
+      "name": "钢斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "【任选】牛皮 等28种任选",
+          "name": "【任选】牛皮 等28种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_steel_axe_new.png",
+      "slug": "recipe-30000104"
+    },
+    {
+      "id": 30000123,
+      "name": "伐木电锯",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×35 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 精制零件",
+          "name": "精制零件",
+          "icon": "icon_part_material_3_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×20 防火塑料",
+          "name": "防火塑料",
+          "icon": "icon_plastic_lv3_new.png"
+        },
+        {
+          "text": "×1 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_electric_saw_lv1.png",
+      "slug": "recipe-30000123"
+    },
+    {
+      "id": 30000181,
+      "name": "高级回收工具",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×15 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_raygun_new.png",
+      "slug": "recipe-30000181"
+    },
+    {
+      "id": 30000127,
+      "name": "哨子",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×6 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_whistle_new.png",
+      "slug": "recipe-30000127"
+    },
+    {
+      "id": 31000123,
+      "name": "伐木电锯",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 合金钢锭",
+          "name": "合金钢锭",
+          "icon": "icon_strong_alloy.png"
+        },
+        {
+          "text": "×20 零件",
+          "name": "零件",
+          "icon": "icon_part_material_2_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×1 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        },
+        {
+          "text": "×20 塑料",
+          "name": "塑料",
+          "icon": "icon_plastic_lv2_new.png"
+        },
+        {
+          "text": "【任选】荒原狼皮 等38种任选",
+          "name": "【任选】荒原狼皮 等38种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_electric_saw_lv1.png",
+      "slug": "recipe-31000123"
+    },
+    {
+      "id": 30000122,
+      "name": "高级凿岩电钻",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×40 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×35 自动化零件",
+          "name": "自动化零件",
+          "icon": "icon_part_material_5_new.png"
+        },
+        {
+          "text": "×20 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×35 防弹纤维织物",
+          "name": "防弹纤维织物",
+          "icon": "icon_weilaihechengzhiwu_new.png"
+        },
+        {
+          "text": "×3 蓄电池",
+          "name": "蓄电池",
+          "icon": "icon_storage_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_electric_drill_lv2_new.png",
+      "slug": "recipe-30000122"
+    },
+    {
+      "id": 30000103,
+      "name": "青铜斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×7 青铜锭",
+          "name": "青铜锭",
+          "icon": "icon_bronze_new.png"
+        },
+        {
+          "text": "【任选】河谷牛皮 等28种任选",
+          "name": "【任选】河谷牛皮 等28种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_iron_axe_new.png",
+      "slug": "recipe-30000103"
+    },
+    {
+      "id": 30000106,
+      "name": "钨合金斧镐",
+      "category": "工具",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×10 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "【任选】河谷牛皮 等28种任选",
+          "name": "【任选】河谷牛皮 等28种任选",
+          "icon": ""
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_tungsten_alloy_axe_new.png",
+      "slug": "recipe-30000106"
+    },
+    {
+      "id": 30009005,
+      "name": "木石行囊",
+      "category": "生存装置",
+      "tab": "轻型工艺台",
+      "tab_id": "201",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】金矿 / 银矿 / 织物",
+          "name": "【任选】金矿 / 银矿 / 织物",
+          "icon": ""
+        },
+        {
+          "text": "×3 生皮",
+          "name": "生皮",
+          "icon": "icon_leather_lv1_new.png"
+        },
+        {
+          "text": "×15 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×8 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_hardwood.png",
+      "slug": "recipe-30009005"
+    },
+    {
+      "id": 30130000,
+      "name": "简易愈伤药膏",
+      "category": "消耗品",
+      "tab": "医疗台",
+      "tab_id": "202",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】血菖蒲 等6种任选",
+          "name": "【任选】血菖蒲 等6种任选",
+          "icon": ""
+        },
+        {
+          "text": "【任选】纯水 / 凉白开",
+          "name": "【任选】纯水 / 凉白开",
+          "icon": ""
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争/非正常收容",
+      "universal": false,
+      "icon": "icons/icon_herbal_medicine.png",
+      "slug": "recipe-30130000",
+      "variants": [
+        {
+          "label": "天空之触／海岛·海域／逆位战争／雪国人生／无尽长梦／非正常收容",
+          "materials": [
+            "【任选】血菖蒲 等6种任选",
+            "【任选】纯水 / 凉白开"
+          ]
+        },
+        {
+          "label": "禁忌岛",
+          "materials": [
+            "【任选】紫锥菊 等7种任选",
+            "【任选】纯水 / 凉白开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30130150,
+      "name": "星尘生命活化装置",
+      "category": "消耗品",
+      "tab": "医疗台",
+      "tab_id": "202",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×25 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        },
+        {
+          "text": "×10 混合抗菌剂",
+          "name": "混合抗菌剂",
+          "icon": "icon_kangjunji_lv2_new.png"
+        },
+        {
+          "text": "×15 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×40 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_stardust_pacemaker_new.png",
+      "slug": "recipe-30130150"
+    },
+    {
+      "id": 30130900,
+      "name": "强心针",
+      "category": "消耗品",
+      "tab": "医疗台",
+      "tab_id": "202",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×8 酸液",
+          "name": "酸液",
+          "icon": "icon_acid.png"
+        },
+        {
+          "text": "×1 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×2 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_syringe_new.png",
+      "slug": "recipe-30130900"
+    },
+    {
+      "id": 30130100,
+      "name": "治疗剂",
+      "category": "消耗品",
+      "tab": "医疗台",
+      "tab_id": "202",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×1 抗菌剂",
+          "name": "抗菌剂",
+          "icon": "icon_kangjunji_lv1_new.png"
+        },
+        {
+          "text": "×1 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×5 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×1 酸液",
+          "name": "酸液",
+          "icon": "icon_acid.png"
+        },
+        {
+          "text": "【任选】纯水 / 凉白开",
+          "name": "【任选】纯水 / 凉白开",
+          "icon": ""
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_activator_lv1_new.png",
+      "slug": "recipe-30130100"
+    },
+    {
+      "id": 30331013,
+      "name": "合成芯片组",
+      "category": "素材",
+      "tab": "元件台",
+      "tab_id": "203",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】零件",
+          "name": "【任选】零件",
+          "icon": ""
+        },
+        {
+          "text": "×60 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        },
+        {
+          "text": "×40 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        },
+        {
+          "text": "×40 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_source_lattice_plus_new.png",
+      "slug": "recipe-30331013"
+    },
+    {
+      "id": 30331005,
+      "name": "保险丝",
+      "category": "素材",
+      "tab": "元件台",
+      "tab_id": "203",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×5 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×2 玻璃",
+          "name": "玻璃",
+          "icon": "icon_grass_new.png"
+        },
+        {
+          "text": "×10 金属废料",
+          "name": "金属废料",
+          "icon": "icon_scrap_metal_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_fuse_new.png",
+      "slug": "recipe-30331005"
+    },
+    {
+      "id": 30341201,
+      "name": "木制枪体",
+      "category": "枪体",
+      "tab": "元件台",
+      "tab_id": "203",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×50 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_wood_receiver.png",
+      "slug": "recipe-30341201"
+    },
+    {
+      "id": 30330114,
+      "name": "蓄电池",
+      "category": "素材",
+      "tab": "元件台",
+      "tab_id": "203",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "×15 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 橡胶",
+          "name": "橡胶",
+          "icon": "icon_plastic_cement_new.png"
+        },
+        {
+          "text": "×20 酸液",
+          "name": "酸液",
+          "icon": "icon_acid.png"
+        },
+        {
+          "text": "×10 电子元件",
+          "name": "电子元件",
+          "icon": "icon_circuitry.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_storage_new.png",
+      "slug": "recipe-30330114"
+    },
+    {
+      "id": 30150051,
+      "name": "手枪铜弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×60",
+      "materials": [
+        {
+          "text": "×3 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_pistol_new.png",
+      "slug": "recipe-30150051"
+    },
+    {
+      "id": 30150331,
+      "name": "手枪穿甲弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_pistol_3_new.png",
+      "slug": "recipe-30150331"
+    },
+    {
+      "id": 30150334,
+      "name": "狙击枪穿甲弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_snipe_3_new.png",
+      "slug": "recipe-30150334"
+    },
+    {
+      "id": 30150393,
+      "name": "榴弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×8",
+      "materials": [
+        {
+          "text": "×20 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×10 炸药混合物",
+          "name": "炸药混合物",
+          "icon": "icon_explosive_mixture_new.png"
+        },
+        {
+          "text": "×25 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        },
+        {
+          "text": "×30 便携混合燃油",
+          "name": "便携混合燃油",
+          "icon": "icon_bottled_oil_new.png"
+        }
+      ],
+      "scenario": "天空之触/海岛·海域/雪国人生/禁忌岛/无尽长梦/逆位战争",
+      "universal": false,
+      "icon": "icons/icon_bullet_submachine_gun_new_lv1.png",
+      "slug": "recipe-30150393"
+    },
+    {
+      "id": 30150344,
+      "name": "狙击枪破拆弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_snipe_new.png",
+      "slug": "recipe-30150344"
+    },
+    {
+      "id": 30150135,
+      "name": "钢头箭",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×10",
+      "materials": [
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×6 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bolt_lv3.png",
+      "slug": "recipe-30150135"
+    },
+    {
+      "id": 30150342,
+      "name": "霰弹枪破拆弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×48",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_shotgun_new.png",
+      "slug": "recipe-30150342"
+    },
+    {
+      "id": 30150133,
+      "name": "中口径钢芯弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×240",
+      "materials": [
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×12 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_rilfe_new.png",
+      "slug": "recipe-30150133"
+    },
+    {
+      "id": 30150341,
+      "name": "手枪破拆弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_pistol_new.png",
+      "slug": "recipe-30150341"
+    },
+    {
+      "id": 30150333,
+      "name": "中口径穿甲弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×240",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_rilfe_3_new.png",
+      "slug": "recipe-30150333"
+    },
+    {
+      "id": 30150021,
+      "name": "赤化电浆弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×1",
+      "materials": [
+        {
+          "text": "【任选】星尘源质",
+          "name": "【任选】星尘源质",
+          "icon": ""
+        },
+        {
+          "text": "×60 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×4 桶装优质燃油",
+          "name": "桶装优质燃油",
+          "icon": "icon_barrelled_oil_new.png"
+        },
+        {
+          "text": "×5 金矿",
+          "name": "金矿",
+          "icon": "icon_gold_ore_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_tongweisu_anmeng_new.png",
+      "slug": "recipe-30150021"
+    },
+    {
+      "id": 30150332,
+      "name": "霰弹枪穿甲弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×48",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_shotgun_3_new.png",
+      "slug": "recipe-30150332"
+    },
+    {
+      "id": 30150391,
+      "name": "狙击枪麻醉弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×36",
+      "materials": [
+        {
+          "text": "×3 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×1 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_snipe_new.png",
+      "slug": "recipe-30150391"
+    },
+    {
+      "id": 30150131,
+      "name": "手枪钢芯弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×12 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_pistol_new.png",
+      "slug": "recipe-30150131"
+    },
+    {
+      "id": 30150345,
+      "name": "破拆箭",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×10",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bolt_lv4.png",
+      "slug": "recipe-30150345"
+    },
+    {
+      "id": 30150053,
+      "name": "中口径铜弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×180",
+      "materials": [
+        {
+          "text": "×3 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_rilfe_new.png",
+      "slug": "recipe-30150053"
+    },
+    {
+      "id": 30150052,
+      "name": "霰弹枪铜弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×36",
+      "materials": [
+        {
+          "text": "×3 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_shotgun_new.png",
+      "slug": "recipe-30150052"
+    },
+    {
+      "id": 30150335,
+      "name": "穿甲箭",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×10",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×30 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bolt_lv4.png",
+      "slug": "recipe-30150335"
+    },
+    {
+      "id": 30150054,
+      "name": "狙击枪铜弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×60",
+      "materials": [
+        {
+          "text": "×3 铜锭",
+          "name": "铜锭",
+          "icon": "icon_copper_block_new.png"
+        },
+        {
+          "text": "×1 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_snipe_new.png",
+      "slug": "recipe-30150054"
+    },
+    {
+      "id": 30150390,
+      "name": "麻醉箭",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×10",
+      "materials": [
+        {
+          "text": "×3 铁锭",
+          "name": "铁锭",
+          "icon": "icon_stannum_new.png"
+        },
+        {
+          "text": "×20 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bolt_lv4.png",
+      "slug": "recipe-30150390"
+    },
+    {
+      "id": 30150343,
+      "name": "中口径破拆弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×240",
+      "materials": [
+        {
+          "text": "×7 钨锭",
+          "name": "钨锭",
+          "icon": "icon_tungsten_alloy_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×20 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_rilfe_new.png",
+      "slug": "recipe-30150343"
+    },
+    {
+      "id": 30150132,
+      "name": "霰弹枪钢芯弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×48",
+      "materials": [
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×12 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_shotgun_new.png",
+      "slug": "recipe-30150132"
+    },
+    {
+      "id": 30150134,
+      "name": "狙击枪钢芯弹",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×80",
+      "materials": [
+        {
+          "text": "×7 钢锭",
+          "name": "钢锭",
+          "icon": "icon_steel_new.png"
+        },
+        {
+          "text": "×2 火药",
+          "name": "火药",
+          "icon": "icon_gunpowder_new.png"
+        },
+        {
+          "text": "×12 星尘源质",
+          "name": "星尘源质",
+          "icon": "icon_stardust_plasm1_new.png"
+        }
+      ],
+      "scenario": "通用",
+      "universal": true,
+      "icon": "icons/icon_bullet_snipe_new.png",
+      "slug": "recipe-30150134"
+    },
+    {
+      "id": 30150900,
+      "name": "箭矢",
+      "category": "弹药",
+      "tab": "弹药工艺台",
+      "tab_id": "204",
+      "output": "×5",
+      "materials": [
+        {
+          "text": "×10 原木",
+          "name": "原木",
+          "icon": "icon_log_new.png"
+        },
+        {
+          "text": "×10 碎石",
+          "name": "碎石",
+          "icon": "icon_stone_new.png"
+        }
+      ],
+      "scenario": "",
+      "universal": false,
+      "icon": "icons/icon_bolt.png",
+      "slug": "recipe-30150900"
+    }
+  ]
+}

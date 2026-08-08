@@ -722,3 +722,131 @@ export function renderModsList({ site, games, game, data, canonical }) {
     content: shell(site, games, game.slug, inner),
   });
 }
+
+/** 科技发明配方图鉴列表页：按制造台分组，卡片显示图标、材料、分类；剧本筛选按钮循环切换+搜索。 */
+export function renderTechRecipesList({ site, games, game, data, canonical }) {
+  // 收集所有剧本选项（隐藏海岛·海域/禁忌岛）
+  const hiddenScenarios = new Set(['海岛·海域', '禁忌岛']);
+  const filterScenarios = ['通用'];
+  for (const item of data.items) {
+    if (!item.universal && item.scenario) {
+      item.scenario.split('/').forEach(s => {
+        const t = s.trim();
+        if (t && !hiddenScenarios.has(t) && !filterScenarios.includes(t)) filterScenarios.push(t);
+      });
+    }
+  }
+
+  // 按 tab 分组
+  const byTab = new Map();
+  for (const item of data.items) {
+    const key = item.tab_id || '0';
+    if (!byTab.has(key)) byTab.set(key, { name: item.tab, items: [] });
+    byTab.get(key).items.push(item);
+  }
+
+  const tabBlocks = [...byTab.entries()].map(([tabId, group]) => {
+    const cards = group.items.map((r) => {
+      const iconUrl = r.icon ? `/assets/tech-recipes/${r.icon}` : '';
+      const iconHtml = iconUrl ? `<img class="recipe-icon" src="${iconUrl}" alt="${escapeHtml(r.name)}" width="48" height="48" loading="lazy">` : '';
+      const mats = (r.materials || []).map(m => {
+        const matIcon = m.icon ? `<img class="recipe-mat-icon" src="/assets/tech-recipes/${m.icon}" alt="" width="20" height="20" loading="lazy">` : '';
+        return `<span class="recipe-mat">${matIcon}${escapeHtml(m.text)}</span>`;
+      }).join('');
+      const catTag = metaTag(r.category);
+      const variantNote = r.variants && r.variants.length > 1
+        ? `<span class="recipe-variant-note">${metaTag(`${r.variants.length}种配方`)}</span>`
+        : '';
+      const dataScenarios = r.universal ? '通用' : (r.scenario || '');
+      return `<li class="recipe-card" data-scenarios="${escapeHtml(dataScenarios)}" data-name="${escapeHtml(r.name)}">
+  <div class="recipe-card__icon">${iconHtml}</div>
+  <div class="recipe-card__body">
+    <span class="recipe-name">${escapeHtml(r.name)}</span>
+    <span class="recipe-meta">${catTag}${variantNote}</span>
+    <span class="recipe-output">${escapeHtml(r.output)}</span>
+    <span class="recipe-mats">${mats}</span>
+  </div>
+</li>`;
+    }).join('\n');
+
+    return `<section class="recipe-group">
+  <h2 class="recipe-group__title">${escapeHtml(group.name)}<span class="recipe-group__count">（${group.items.length}）</span></h2>
+  <ul class="recipe-grid">${cards}</ul>
+</section>`;
+  }).join('\n');
+
+  // 剧本筛选按钮标签
+  const allBtnFilters = [{ val: '', label: '全部' }, ...filterScenarios.map(s => ({ val: s, label: s }))];
+  const btnHtml = allBtnFilters.map((b, i) =>
+    `<button class="recipe-filter__btn${i === 0 ? ' active' : ''}" type="button" data-val="${escapeHtml(b.val)}">${escapeHtml(b.label)}</button>`
+  ).join('');
+
+  const inner = `${crumb(`/${game.slug}/`, `${game.name}专区`)}
+<p class="meta-row">${metaTag('SECTION')}${metaTag(data.section)}</p>
+<h1>${escapeHtml(game.name)}${escapeHtml(data.section)}</h1>
+<p class="lede">${escapeHtml(data.description)}</p>
+<div class="recipe-filter">
+  <input class="recipe-filter__input" type="text" id="recipe-search" placeholder="搜索配方名称" autocomplete="off">
+  <div class="recipe-filter__btns" id="recipe-scenario-btns">${btnHtml}</div>
+</div>
+${tabBlocks}
+<script>
+(function(){
+  var curVal = '';
+  var search = document.getElementById('recipe-search');
+  var btns = document.querySelectorAll('.recipe-filter__btn');
+  function applyFilter(){
+    var q = search ? search.value.toLowerCase() : '';
+    var cards = document.querySelectorAll('.recipe-card');
+    for (var i = 0; i < cards.length; i++) {
+      var s = cards[i].getAttribute('data-scenarios') || '';
+      var n = cards[i].getAttribute('data-name') || '';
+      var matchScen = !curVal || s === '通用' || s.indexOf(curVal) !== -1;
+      var matchSearch = !q || n.toLowerCase().indexOf(q) !== -1;
+      cards[i].style.display = (matchScen && matchSearch) ? '' : 'none';
+    }
+    var groups = document.querySelectorAll('.recipe-group');
+    for (var g = 0; g < groups.length; g++) {
+      var vis = groups[g].querySelectorAll('.recipe-card:not([style*="display: none"])');
+      var cnt = groups[g].querySelector('.recipe-group__count');
+      if (cnt) cnt.textContent = '（' + vis.length + '）';
+    }
+  }
+  for (var j = 0; j < btns.length; j++) {
+    btns[j].addEventListener('click', function(){
+      curVal = this.getAttribute('data-val');
+      for (var k = 0; k < btns.length; k++) btns[k].classList.remove('active');
+      this.classList.add('active');
+      applyFilter();
+    });
+  }
+  if (search) search.addEventListener('input', applyFilter);
+
+  // 全屏/最大化自适应：窗口接近屏幕宽度时放宽容器+网格列数
+  var mainEl = document.querySelector('main');
+  function checkWideLayout() {
+    if (!mainEl) return;
+    // 窗口宽度 ≥ 屏幕可用宽度 - 40px（容差，覆盖最大化和全屏）
+    var maximized = window.innerWidth >= (screen.availWidth - 40);
+    if (maximized) {
+      mainEl.classList.add('recipe-wide');
+    } else {
+      mainEl.classList.remove('recipe-wide');
+    }
+  }
+  checkWideLayout();
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(checkWideLayout, 200);
+  });
+})();
+</script>`;
+
+  return renderBase({
+    title: `${game.name}${data.section}`,
+    description: data.seoDescription,
+    canonical,
+    content: shell(site, games, game.slug, inner),
+  });
+}
