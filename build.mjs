@@ -86,8 +86,8 @@ function sectionPreview(game, kind, data, count) {
         };
       case 'materials':
         return {
-          title: item.name,
-          summary: item.summary || `${item.location} · ${item.route}`,
+          title: item.title || item.name,
+          summary: item.summary || [item.location, item.route].filter(Boolean).join(' · '),
           href:
             item.slug && Array.isArray(item.sections)
               ? `/${game.slug}/${data.slug}/${item.slug}/`
